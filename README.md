@@ -130,10 +130,10 @@ The design of Cloud is done entirely with TailwindCSS. We have added many differ
 ## Compiling Assets
 By default we make use of Laravel Mix to compile all the assets. Make sure to run the following commands after installing the starter-kit.
 
-`npm install` - to install all the required dependencies.
-`npm run dev` - to run in development mode.
-`npm run watch` - to run in development with hot reload.
-`npm run production` - to compile assets for production.
+* `npm install` - to install all the required dependencies.
+* `npm run dev` - to run in development mode.
+* `npm run watch` - to run in development with hot reload.
+* `npm run production` - to compile assets for production.
 
 ## 🐞 Bugs and 💡 Feature Requests
 Please refer to the issues tab to submit a Bug or a Feature Request.
@@ -142,6 +142,7 @@ Please refer to the issues tab to submit a Bug or a Feature Request.
 Cloud was brought to you by the lovely team at [Lucky Media](https://www.luckymedia.dev/), we are a digital agency focused on professional, innovative, user-oriented web design & development.
 
 Last but not least thanks to the creators/contributors of the following packages which made Cloud a reality:
+
 * Statamic CMS
 * Tailwind CSS
 * Alpine.js
