@@ -1,0 +1,14 @@
+---
+positions:
+  left: 'mr-auto'
+  center: 'mx-auto'
+  right: 'ml-auto'
+---
+
+<div class="container py-16 md:py-20">
+    <div class="max-w-4xl {{ content_position }}">
+        <div class="prose prose-lg text-bluegray-300 max-w-none">
+            {{ content }}
+        </div>
+    </div>
+</div>

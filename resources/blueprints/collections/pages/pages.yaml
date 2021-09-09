@@ -1,0 +1,844 @@
+title: Pages
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: blocks
+        field:
+          collapse: accordion
+          sets:
+            hero:
+              display: 'Hero Section'
+              fields:
+                -
+                  handle: version
+                  field:
+                    options:
+                      hero_1: 'Variant 1'
+                      hero_2: 'Variant 2'
+                      hero_3: 'Variant 3'
+                      hero_4: 'Variant 4'
+                    display: Variant
+                    type: button_group
+                    icon: button_group
+                    instructions: 'Please select a hero variant'
+                    listable: hidden
+                    validate:
+                      - required
+                    default: hero_1
+                -
+                  handle: image
+                  field:
+                    mode: grid
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    max_files: 1
+                    display: Image
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                    validate:
+                      - required
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Title
+                    type: text
+                    icon: text
+                    listable: hidden
+                    validate:
+                      - required
+                -
+                  handle: description
+                  field:
+                    antlers: false
+                    display: Description
+                    type: textarea
+                    icon: textarea
+                    listable: hidden
+                -
+                  import: button
+            cta:
+              display: 'Cta Section'
+              fields:
+                -
+                  handle: version
+                  field:
+                    options:
+                      cta_1: 'Variant 1'
+                      cta_2: 'Variant 2'
+                      cta_3: 'Variant 3'
+                      cta_4: 'Variant 4'
+                      cta_5: 'Variant 5'
+                    display: Variant
+                    type: button_group
+                    icon: button_group
+                    instructions: 'Please select a CTA variant'
+                    listable: hidden
+                    validate:
+                      - required
+                    default: cta_1
+                -
+                  handle: image
+                  field:
+                    mode: grid
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    max_files: 1
+                    display: Image
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Title
+                    type: text
+                    icon: text
+                    listable: hidden
+                    validate:
+                      - required
+                -
+                  handle: description
+                  field:
+                    antlers: false
+                    display: Description
+                    type: textarea
+                    icon: textarea
+                    listable: hidden
+                -
+                  import: button
+            logo_cloud:
+              display: 'Logo Cloud'
+              fields:
+                -
+                  handle: version
+                  field:
+                    options:
+                      logo_cloud_1: 'Variant 1'
+                      logo_cloud_2: 'Variant 2'
+                      logo_cloud_3: 'Variant 3'
+                      logo_cloud_4: 'Variant 4'
+                      logo_cloud_5: 'Variant 5'
+                    display: Variant
+                    type: button_group
+                    icon: button_group
+                    listable: hidden
+                    validate:
+                      - required
+                    default: logo_cloud_1
+                -
+                  handle: images
+                  field:
+                    mode: grid
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    display: Images
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                    validate:
+                      - required
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Title
+                    type: text
+                    icon: text
+                    listable: hidden
+                -
+                  handle: description
+                  field:
+                    antlers: false
+                    display: Description
+                    type: textarea
+                    icon: textarea
+                    listable: hidden
+                -
+                  import: button
+            features:
+              display: 'Feature Section'
+              fields:
+                -
+                  handle: version
+                  field:
+                    options:
+                      feature_1: 'Variant 1'
+                      feature_2: 'Variant 2'
+                      feature_3: 'Variant 3'
+                      feature_4: 'Variant 4'
+                    display: Variant
+                    type: button_group
+                    icon: button_group
+                    listable: hidden
+                    validate:
+                      - required
+                    default: feature_1
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Title
+                    type: text
+                    icon: text
+                    listable: hidden
+                    validate:
+                      - required
+                -
+                  handle: description
+                  field:
+                    antlers: false
+                    display: Description
+                    type: textarea
+                    icon: textarea
+                    listable: hidden
+                -
+                  handle: items
+                  field:
+                    collapse: false
+                    sets:
+                      new_set:
+                        display: 'New set'
+                        fields:
+                          -
+                            handle: icon
+                            field:
+                              options:
+                                plug: Plug
+                                github: Github
+                                site: Site
+                                data: Data
+                                rollback: Rollback
+                                pie_chart: 'Pie Chart'
+                              multiple: false
+                              clearable: false
+                              searchable: true
+                              taggable: false
+                              push_tags: false
+                              cast_booleans: false
+                              display: Icon
+                              type: select
+                              icon: select
+                              listable: hidden
+                              max_items: 1
+                          -
+                            handle: title
+                            field:
+                              input_type: text
+                              antlers: false
+                              display: Title
+                              type: text
+                              icon: text
+                              listable: hidden
+                          -
+                            handle: description
+                            field:
+                              antlers: false
+                              display: Description
+                              type: textarea
+                              icon: textarea
+                              listable: hidden
+                    display: Items
+                    type: replicator
+                    icon: replicator
+                    listable: hidden
+            testimonials:
+              display: 'Testimonial Section'
+              fields:
+                -
+                  handle: version
+                  field:
+                    options:
+                      testimonials_1: 'Variant 1'
+                      testimonials_2: 'Variant 2'
+                      testimonials_3: 'Variant 3'
+                      testimonials_4: 'Variant 4'
+                    display: Variant
+                    type: button_group
+                    icon: button_group
+                    listable: hidden
+                    default: testimonials_1
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Title
+                    type: text
+                    icon: text
+                    listable: hidden
+                -
+                  handle: testimonial
+                  field:
+                    collapse: false
+                    sets:
+                      new_set:
+                        display: 'New Set'
+                        fields:
+                          -
+                            handle: image
+                            field:
+                              mode: grid
+                              container: assets
+                              restrict: false
+                              allow_uploads: true
+                              max_files: 1
+                              display: Image
+                              type: assets
+                              icon: assets
+                              listable: hidden
+                              validate:
+                                - required
+                          -
+                            handle: name
+                            field:
+                              input_type: text
+                              antlers: false
+                              display: Name
+                              type: text
+                              icon: text
+                              listable: hidden
+                          -
+                            handle: position
+                            field:
+                              input_type: text
+                              antlers: false
+                              display: Position
+                              type: text
+                              icon: text
+                              listable: hidden
+                          -
+                            handle: description
+                            field:
+                              antlers: false
+                              display: Description
+                              type: textarea
+                              icon: textarea
+                              listable: hidden
+                    display: Testimonial
+                    type: replicator
+                    icon: replicator
+                    listable: hidden
+                    instructions: 'Design is optimized for a maximum of 2 sets. You can freely add more if needed.'
+            blog:
+              display: 'Blog Section'
+              fields:
+                -
+                  handle: version
+                  field:
+                    options:
+                      blog_1: 'Blog 1'
+                      blog_2: 'Blog 2'
+                      blog_3: 'Blog 3'
+                    display: Variant
+                    type: button_group
+                    icon: button_group
+                    listable: hidden
+                    validate:
+                      - required
+                    default: blog_1
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Title
+                    type: text
+                    icon: text
+                    listable: hidden
+                    validate:
+                      - required
+                -
+                  handle: description
+                  field:
+                    antlers: false
+                    display: Description
+                    type: textarea
+                    icon: textarea
+                    listable: hidden
+                    validate:
+                      - required
+                -
+                  handle: instructions
+                  field:
+                    display: Instructions
+                    type: section
+                    icon: section
+                    instructions: 'Use this blog section in the home page or somewhere else to display only the latest 3 posts.'
+                    listable: hidden
+                -
+                  handle: posts
+                  field:
+                    mode: select
+                    display: Posts
+                    type: collections
+                    icon: collections
+                    listable: hidden
+                    instructions: 'It will only show the latest 3 entries'
+            contact:
+              display: 'Contact Section'
+              fields:
+                -
+                  handle: version
+                  field:
+                    options:
+                      contact_1: 'Variant 1'
+                      contact_2: 'Variant 2'
+                      contact_3: 'Variant 3'
+                    display: Variant
+                    type: button_group
+                    icon: button_group
+                    listable: hidden
+                    default: contact_1
+                -
+                  handle: image
+                  field:
+                    mode: grid
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    max_files: 1
+                    display: Image
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Title
+                    type: text
+                    icon: text
+                    listable: hidden
+                    validate:
+                      - required
+                -
+                  handle: description
+                  field:
+                    antlers: false
+                    display: Description
+                    type: textarea
+                    icon: textarea
+                    listable: hidden
+                -
+                  handle: details
+                  field:
+                    collapse: false
+                    sets:
+                      items:
+                        display: Details
+                        fields:
+                          -
+                            handle: icon
+                            field:
+                              options:
+                                email: Email
+                                address: Address
+                                phone: Phone
+                              multiple: false
+                              clearable: false
+                              searchable: true
+                              taggable: false
+                              push_tags: false
+                              cast_booleans: false
+                              display: Icon
+                              type: select
+                              icon: select
+                              listable: hidden
+                          -
+                            handle: title
+                            field:
+                              input_type: text
+                              antlers: false
+                              display: Title
+                              type: text
+                              icon: text
+                              listable: hidden
+                          -
+                            handle: description
+                            field:
+                              antlers: false
+                              display: Description
+                              type: textarea
+                              icon: textarea
+                              listable: hidden
+                    display: 'Contact Details'
+                    type: replicator
+                    icon: replicator
+                    listable: hidden
+            section_with_image:
+              display: 'Section With Image'
+              fields:
+                -
+                  handle: version
+                  field:
+                    options:
+                      section_with_image_1: 'Variant 1'
+                      section_with_image_2: 'Variant 2'
+                    display: Variant
+                    type: button_group
+                    icon: button_group
+                    listable: hidden
+                    validate:
+                      - required
+                    default: section_with_image_1
+                -
+                  handle: image
+                  field:
+                    mode: grid
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    max_files: 1
+                    display: Image
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                    validate:
+                      - required
+                    show_filename: true
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Title
+                    type: text
+                    icon: text
+                    listable: hidden
+                    validate:
+                      - required
+                -
+                  handle: description
+                  field:
+                    antlers: false
+                    display: Description
+                    type: textarea
+                    icon: textarea
+                    listable: hidden
+                    validate:
+                      - required
+                -
+                  import: button
+            text_section:
+              display: 'Text Section'
+              fields:
+                -
+                  handle: version
+                  field:
+                    default: text
+                    display: Variant
+                    type: hidden
+                    icon: hidden
+                    listable: hidden
+                -
+                  handle: content_position
+                  field:
+                    options:
+                      mr-auto: Left
+                      mx-auto: Center
+                      ml-auto: Right
+                    display: Position
+                    type: button_group
+                    icon: button_group
+                    listable: hidden
+                    instructions: 'Content position'
+                    default: mr-auto
+                -
+                  handle: content
+                  field:
+                    always_show_set_button: false
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - image
+                    container: assets
+                    save_html: false
+                    toolbar_mode: fixed
+                    link_noopener: false
+                    link_noreferrer: false
+                    target_blank: false
+                    reading_time: false
+                    fullscreen: true
+                    allow_source: true
+                    enable_input_rules: true
+                    enable_paste_rules: true
+                    display: Content
+                    type: bard
+                    icon: bard
+                    listable: hidden
+          display: Blocks
+          type: replicator
+          icon: replicator
+          listable: hidden
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+            - 'unique_entry_value:{collection},{id},{site}'
+  SEO:
+    display: SEO
+    fields:
+      -
+        handle: seotamic_meta
+        field:
+          display: Meta
+          listable: hidden
+          type: section
+          localizable: false
+      -
+        handle: seotamic_title
+        field:
+          options:
+            title: Title
+            custom: Custom
+          clearable: false
+          multiple: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          type: select
+          localizable: false
+          listable: hidden
+          default: title
+          display: Title
+          instructions: 'It can be used to determine the title used on search engine results pages.'
+      -
+        handle: seotamic_custom_title
+        field:
+          input_type: text
+          character_limit: 100
+          type: text
+          localizable: false
+          listable: hidden
+          display: 'Custom Meta Title'
+          if:
+            seotamic_title: 'equals custom'
+      -
+        handle: seotamic_title_prepend
+        field:
+          type: toggle
+          instructions: 'Prepends to title the text set in General SEO settings'
+          localizable: false
+          default: true
+          width: 50
+          listable: hidden
+          display: 'Title prepend'
+      -
+        handle: seotamic_title_append
+        field:
+          type: toggle
+          localizable: false
+          instructions: 'Appends to title the text set in General SEO settings'
+          width: 50
+          listable: hidden
+          default: true
+          display: 'Title append'
+      -
+        handle: seotamic_meta_description
+        field:
+          options:
+            empty: Empty
+            general: General
+            custom: Custom
+          clearable: false
+          default: empty
+          multiple: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          type: select
+          instructions: 'It can be used to determine the text used under the title on search engine results pages. If empty, search engines will automatically generate this text.'
+          localizable: false
+          listable: hidden
+          display: 'Meta description'
+      -
+        handle: seotamic_custom_meta_description
+        field:
+          input_type: text
+          character_limit: 200
+          type: textarea
+          localizable: false
+          listable: hidden
+          display: 'Custom Meta description'
+          if:
+            seotamic_meta_description: 'equals custom'
+      -
+        handle: seotamic_canonical
+        field:
+          type: link
+          instructions: 'By default it will be set to the page url'
+          localizable: false
+          listable: hidden
+          display: Canonical
+      -
+        handle: seotamic_social
+        field:
+          type: section
+          localizable: false
+          listable: hidden
+          display: Social
+      -
+        handle: seotamic_open_graph_title
+        field:
+          options:
+            title: Title
+            general: General
+            custom: Custom
+          clearable: false
+          default: title
+          multiple: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          type: select
+          localizable: false
+          listable: hidden
+          display: 'Open Graph title'
+      -
+        handle: seotamic_custom_open_graph_title
+        field:
+          input_type: text
+          character_limit: 100
+          type: text
+          localizable: false
+          listable: hidden
+          display: 'Custom Open Graph title'
+          if:
+            seotamic_open_graph_title: 'equals custom'
+      -
+        handle: seotamic_open_graph_description
+        field:
+          options:
+            meta: 'Meta description'
+            general: 'General description'
+            custom: Custom
+          clearable: false
+          default: general
+          multiple: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          type: select
+          localizable: false
+          listable: hidden
+          display: 'Open Graph description'
+      -
+        handle: seotamic_custom_open_graph_description
+        field:
+          input_type: text
+          character_limit: 200
+          type: textarea
+          localizable: false
+          listable: hidden
+          display: 'Custom Open Graph description'
+          if:
+            seotamic_open_graph_description: 'equals custom'
+      -
+        handle: seotamic_twitter_title
+        field:
+          options:
+            title: Title
+            general: General
+            custom: Custom
+          clearable: false
+          default: title
+          multiple: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          type: select
+          localizable: false
+          listable: hidden
+          display: 'Twitter title'
+      -
+        handle: seotamic_custom_twitter_title
+        field:
+          input_type: text
+          character_limit: 100
+          type: text
+          localizable: false
+          listable: hidden
+          display: 'Custom Twitter title'
+          if:
+            seotamic_twitter_title: 'equals custom'
+      -
+        handle: seotamic_twitter_description
+        field:
+          options:
+            meta: 'Meta description'
+            general: 'General description'
+            custom: Custom
+          clearable: false
+          default: general
+          multiple: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          type: select
+          localizable: false
+          listable: hidden
+          display: 'Twitter description'
+      -
+        handle: seotamic_custom_twitter_description
+        field:
+          input_type: text
+          character_limit: 200
+          type: textarea
+          localizable: false
+          listable: hidden
+          display: 'Custom Twitter description'
+          if:
+            seotamic_twitter_description: 'equals custom'
+      -
+        handle: seotamic_image
+        field:
+          container: assets
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          type: assets
+          instructions: 'If not set, the general image will be used. It''s best to use an image with a 1.91:1 aspect ratio that is at least 1200px wide for universal support. The image will be resized to 1200 width.'
+          localizable: false
+          listable: hidden
+          display: Image

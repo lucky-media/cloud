@@ -1,0 +1,36 @@
+{{ form:contact_form }}
+
+    {{ fields }}
+        <div class="p-1">
+            <label class="sr-only">
+                {{ display }}
+            </label>
+            <div class="p-1">
+                {{ field }}
+
+                {{ if error }}
+                    <p class="mt-2 text-sm font-medium text-red-500">
+                        {{ error }}
+                    </p>
+                {{ /if }}
+            </div>
+        </div>
+    {{ /fields }}
+
+    {{ if success }}
+        <div class="p-2">
+            <div class="flex flex-row items-center w-full p-4 text-white bg-green-900 rounded-lg">
+                {{ svg src="check" class="w-8 h-8 mr-2 text-white fill-current" }}
+
+                {{ success }}
+            </div>
+        </div>
+    {{ /if }}
+
+
+    <div class="flex justify-end mt-10">
+        {{ partial:components.button label="Submit" size="sm" icon="check" color="{ color or 'brand' }" }}
+    </div>
+
+
+{{ /form:contact_form }}

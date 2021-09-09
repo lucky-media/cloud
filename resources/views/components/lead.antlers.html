@@ -1,0 +1,18 @@
+---
+classes: 'font-normal'
+sizes:
+    sm: 'text-sm'
+    base: 'text-base'
+    lg: 'text-lg'
+    xl: 'md:text-xl text-base'
+types:
+    bluegray: 'text-bluegray-300'
+    gray: 'text-gray-700'
+    white: 'text-white'
+    purple: 'text-purple-500'
+---
+
+<p
+    class="{{ view }} {{ classes }} {{ sizes[size] }} {{ types[color] }} {{ /view }} {{ class }}">
+    {{ label }}
+</p>

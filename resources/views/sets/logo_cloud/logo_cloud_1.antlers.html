@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="max-w-3xl py-16 mx-auto md:py-24">
+        <ul class="grid grid-cols-2 flex-gap-4 md:flex-gap-6 lg:flex-gap-8 md:grid-cols-4">
+            {{ images }}
+                <li class="p-8 bg-white shadow-3xl rounded-2xl">
+                    <img src="{{ glide:url width="150" height="80" fit="contain" }}"
+                        alt="{{ alt }}"
+                        class="object-cover w-auto h-auto mx-auto max-h-8">
+                </li>
+            {{ /images }}
+        </ul>
+    </div>
+</div>

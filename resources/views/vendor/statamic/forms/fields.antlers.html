@@ -1,0 +1,15 @@
+{{ fields }}
+    <div class="p-1">
+        <label class="sr-only">
+            {{ display }}
+        </label>
+        <div class="p-1">
+            {{ field }}
+        </div>
+        {{ if error }}
+            <p class="mt-2 text-sm font-medium text-red-500">
+                {{ error }}
+            </p>
+        {{ /if }}
+    </div>
+{{ /fields }}

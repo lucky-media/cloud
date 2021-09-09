@@ -1,0 +1,57 @@
+<div class="relative py-16 overflow-hidden md:py-32">
+    <div class="container">
+        {{ if title }}
+            {{ partial:components.heading label=title size="h1" color="blue" center="true" }}
+        {{ /if }}
+        <div class="grid pt-12 flex-gap-4 md:grid-cols-2 xl:grid-cols-3">
+            {{ collection from="posts" limit="6" paginate="true" as="posts" }}
+                {{ posts }}
+                    <div class="flex flex-col overflow-hidden bg-white shadow-3xl rounded-xl">
+                        <a aria-label="{{ image:alt or title }}"
+                            href="{{ url }}">
+                            <img src="{{ glide:image width="650" height="400" fit="crop_focal" }}"
+                                alt="{{ image:alt or title }}" class="object-cover w-full h-64">
+                        </a>
+
+                        <div class="flex flex-col justify-between h-full p-6">
+                            <div class="space-y-5">
+
+                                {{ if category }}
+                                    <div class="mb-3 space-x-3">
+                                        {{ category }}
+                                            {{ partial:components.pill }}
+                                        {{ /category }}
+                                    </div>
+                                {{ /if }}
+
+                                <a href="{{ url }}">
+                                    {{ partial:components.heading label=title size="h4" color="blue" class="hover:underline" }}
+                                </a>
+
+                                {{ if excerpt }}
+                                    {{ partial:components.lead label=excerpt size="base" color="bluegray" class="mt-5" }}
+                                {{ /if }}
+                            </div>
+
+                            {{ partial:components.arrow_link link=url label="Read More" }}
+                        </div>
+                    </div>
+                {{ /posts }}
+
+                {{ paginate }}
+                    {{ if prev_page or next_page }}
+                        <div class="py-10 md:py-20 md:col-span-2 xl:col-span-3">
+                            {{ partial:partials._pagination }}
+                        </div>
+                    {{ /if }}
+                {{ /paginate }}
+            {{ /collection }}
+        </div>
+    </div>
+
+    <div style="z-index:-1"
+        class="opacity-30 absolute top-56 xl:top-44 -left-28 md:w-[650px] md:h-[680px] w-[500px] h-[500px]">
+        {{ svg src="random-shape" class="text-purple-300 fill-current" }}
+    </div>
+
+</div>

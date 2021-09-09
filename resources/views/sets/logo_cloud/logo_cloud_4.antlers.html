@@ -1,0 +1,31 @@
+<div class="container py-16 md:py-24">
+    <div class="flex flex-wrap items-center justify-between">
+        <div class="max-w-xl mx-auto lg:mr-auto lg:mx-0">
+            <div class="py-8 pl-6 pr-6 space-y-5 bg-purple-500 md:pl-14 md:pr-10 md:py-10 rounded-2xl">
+                {{ if title }}
+                    {{ partial:components.heading label=title size="h3" color="white" }}
+                {{ /if }}
+
+                {{ if description }}
+                    {{ partial:components.lead label=description size="base" color="white" }}
+                {{ /if }}
+
+                {{ if toggle and label }}
+                    <div class="flex justify-center mt-12 md:justify-start md:mt-5">
+                        {{ partial:components.button size=button_size color=variant }}
+                    </div>
+                {{ /if }}
+
+            </div>
+        </div>
+        <div class="max-w-md mx-auto mt-12 lg:mt-0">
+            <div class="grid grid-cols-2 flex-gap-10 md:grid-cols-4">
+                {{ images }}
+                    <img src="{{ glide:url width="150" height="50" fit="contain" }}"
+                        alt="{{ alt }}"
+                        class="object-cover w-auto h-auto mx-auto max-h-14">
+                {{ /images }}
+            </div>
+        </div>
+    </div>
+</div>

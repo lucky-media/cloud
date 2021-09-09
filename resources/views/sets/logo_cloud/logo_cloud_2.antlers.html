@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="max-w-3xl py-16 mx-auto text-center md:py-24">
+        {{ if title }}
+            <div class="mb-12">
+                {{ partial:components.heading label=title size="h1" color="blue" }}
+            </div>
+        {{ /if }}
+
+        <div class="flex justify-center">
+            <div class="grid grid-cols-2 flex-gap-12 md:grid-cols-8">
+                {{ images }}
+                    <img src="{{ glide:url width="150" height="50" fit="contain" }}"
+                        alt="{{ alt }}"
+                        class="object-cover w-auto h-auto mx-auto max-h-14">
+                {{ /images }}
+            </div>
+        </div>
+    </div>
+</div>

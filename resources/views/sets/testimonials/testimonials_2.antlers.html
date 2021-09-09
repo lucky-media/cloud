@@ -1,0 +1,30 @@
+<div class="py-10 overflow-hidden bg-pink-100 md:py-20">
+    <div class="container">
+        <div class="grid md:grid-cols-2 flex-gap-10">
+            {{ testimonial }}
+                <div class="p-5 bg-white shadow-xs rounded-2xl">
+                    <div class="flex items-center">
+                        {{ if image }}
+                            <div class="w-20 h-20 overflow-hidden rounded-xl">
+                                <img src="{{ glide:image width="75" height="75"  fit="crop_focal" }}"
+                                    alt="{{ image:alt }}"
+                                    class="object-cover w-full h-auto">
+                            </div>
+                        {{ /if }}
+                        <div class="ml-6">
+                            {{ if name }}
+                                {{ partial:components.heading label=name size="h5" color="blue" }}
+                            {{ /if }}
+                            {{ if position }}
+                                {{ partial:components.lead label=position size="base" color="bluegray" class="mt-2" }}
+                            {{ /if }}
+                        </div>
+                    </div>
+                    {{ if description }}
+                        {{ partial:components.lead label=description size="lg" color="bluegray" class="mt-4" }}
+                    {{ /if }}
+                </div>
+            {{ /testimonial }}
+        </div>
+    </div>
+</div>

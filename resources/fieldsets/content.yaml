@@ -1,0 +1,31 @@
+title: 'Content Section'
+fields:
+  -
+    handle: content
+    field:
+      always_show_set_button: false
+      buttons:
+        - h3
+        - h4
+        - h5
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - anchor
+        - image
+      container: assets
+      save_html: false
+      toolbar_mode: fixed
+      link_noopener: true
+      link_noreferrer: true
+      target_blank: false
+      reading_time: false
+      fullscreen: true
+      allow_source: true
+      display: Content
+      type: bard
+      icon: bard
+      listable: hidden
+      enable_input_rules: true
+      enable_paste_rules: true

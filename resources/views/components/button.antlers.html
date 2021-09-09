@@ -1,0 +1,45 @@
+---
+classes: 'inline-flex items-center font-bold rounded-full focus:outline-none focus-visible:ring focus:ring-purple-500 focus:ring-opacity-20 focus-visible:ring-offset-2 transition-all ease-in-out duration-300 group'
+sizes:
+  sm: 'px-6 py-4 text-base'
+  md: 'px-10 py-4 font-normal text-base'
+  lg: 'px-14 py-4 text-xl text-lg'
+types:
+  brand: 'bg-purple-500 text-white border-2 border-purple-500 hover:bg-white hover:text-purple-500'
+  outline: 'text-purple-500 border-2 border-purple-500 hover:bg-purple-500 hover:text-white'
+  white: 'text-indigo-900 bg-white shadow-xs group hover:bg-purple-600 hover:text-white'
+icons:
+  brand: 'text-white group-hover:text-purple-500'
+  outline: 'text-purple-500 group-hover:text-white'
+---
+
+{{ if link }}
+    <a href="{{ link }}"
+        {{ if target_blank }} target="_blank" {{ /if }}
+        class="{{ view }} {{ classes }} {{ sizes[size] }} {{ types[color] }} {{ /view }} {{ class }}">
+
+        {{ if icon and color !== 'white' }}
+            {{ svg src="{{ icon }}" class="w-6 h-6 mr-3 fill-current {{ view }} {{ icons[color] }} {{ /view }}" }}
+        {{ /if }}
+
+        {{ label }}
+
+        {{ if color === 'white' }}
+            {{ svg src="right-arrow" class="w-6 h-6 ml-5 text-purple-500 fill-current group-hover:text-white" }}
+        {{ /if }}
+    </a>
+{{ else }}
+    <button type="{{ button_type or 'submit' }}"
+        class="{{ view }} {{ classes }} {{ sizes[size] }} {{ types[color] }} {{ /view }} {{ class }}">
+
+        {{ if icon and color !== 'white' }}
+            {{ svg src="{{ icon }}" class="w-6 h-6 mr-3 fill-current {{ view }} {{ icons[color] }} {{ /view }}" }}
+        {{ /if }}
+
+        {{ label }}
+
+        {{ if color === 'white' }}
+            {{ svg src="right-arrow" class="w-6 h-6 ml-5 text-purple-500 fill-current" }}
+        {{ /if }}
+    </button>
+{{ /if }}

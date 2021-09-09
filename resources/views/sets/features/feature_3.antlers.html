@@ -1,0 +1,39 @@
+<div class="relative overflow-hidden">
+    <div class="container py-16 md:py-24">
+        <div class="flex flex-wrap">
+            <div class="mb-10 md:mb-0 lg:w-4/12">
+                {{ if title }}
+                    {{ partial:components.heading label=title size="h3" color="blue" }}
+                {{ /if }}
+                {{ if description }}
+                    <div class="mt-3 md:max-w-[265px]">
+                        {{ partial:components.lead label=description size="base" color="bluegray" }}
+                    </div>
+                {{ /if }}
+            </div>
+            <div class="lg:w-8/12">
+                <div class="grid flex-gap-10 md:grid-cols-2">
+                    {{ items }}
+                        <div class="flex items-center p-5 bg-white shadow-3xl rounded-xl">
+                            {{ if icon }}
+                                {{ svg src="{{ icon }}" class="flex-shrink-0 w-16 h-16 mr-5 text-pink-500 fill-current" }}
+                            {{ /if }}
+                            <div>
+                                {{ if title }}
+                                    {{ partial:components.heading label=title size="h5" color="blue" }}
+                                {{ /if }}
+                                {{ if description }}
+                                    {{ partial:components.lead label=description size="base" color="bluegray" class="mt-2" }}
+                                {{ /if }}
+                            </div>
+                        </div>
+                    {{ /items }}
+                </div>
+            </div>
+        </div>
+        <div style="z-index:-1"
+            class="absolute md:top-0 lg:-top-10 xl:-top-20 md:-right-80 xl:-right-60 xl:w-[750px] md:w-[650px] md:h-[680px] xl:h-[780px] w-[500px] h-[500px] top-60 -right-60">
+            {{ svg src="random-shape" class="text-purple-300 fill-current" }}
+        </div>
+    </div>
+</div>

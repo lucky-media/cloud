@@ -1,0 +1,21 @@
+<div class="container flex flex-col items-center justify-between py-16 md:py-24 md:flex-row">
+    <div class="text-center md:text-left md:pr-10 xl:pr-20 lg:w-5/12 md:w-6/12">
+        {{ if title }}
+            {{ partial:components.heading label=title size="h1" color="blue" }}
+        {{ /if }}
+
+        {{ if description }}
+            {{ partial:components.lead label=description size="xl" color="bluegray" class="mt-4" }}
+        {{ /if }}
+
+        {{ if toggle and label }}
+            <div class="mt-10">
+                {{ partial:components.button label=label size=button_size color=variant }}
+            </div>
+        {{ /if }}
+    </div>
+    <div class="mt-16 lg:w-7/12 md:w-6/12 md:mt-0">
+        <img src="{{ glide:image width="770" height="580" fit="crop_focal" }}" alt="{{ image:alt }}"
+            class="object-cover w-full h-auto">
+    </div>
+</div>

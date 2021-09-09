@@ -1,0 +1,29 @@
+<div class="relative py-24 overflow-hidden bg-gray-200">
+    <div class="container">
+        <div class="flex flex-wrap">
+            <div class="md:w-5/12">
+                {{ if title }}
+                    {{ partial:components.heading label=title size="h1" color="blue" }}
+                {{ /if }}
+
+                {{ if description }}
+                    {{ partial:components.lead label=description size="lg" color="bluegray" class="mt-4" }}
+                {{ /if }}
+
+                {{ if toggle and label }}
+                    {{ partial:components.arrow_link }}
+                {{ /if }}
+            </div>
+            <div class="max-w-2xl mx-auto mt-16 ml-4 xl:ml-auto xl:mt-0">
+                <img src="{{ glide:image width="645" height="431"  fit="crop_focal" }}"
+                    alt="{{ image:alt }}" class="object-cover w-full h-auto">
+            </div>
+        </div>
+    </div>
+
+    <div style="z-index:-1"
+        class="absolute md:top-10 xl:top-12 md:-right-20 xl:right-20 xl:w-[750px] md:w-[650px] md:h-[680px] xl:h-[780px] w-[400px] h-[400px] top-56 -right-20">
+        {{ svg src="random-shape" class="w-full h-auto text-purple-300 fill-current text-opacity-30"  }}
+    </div>
+
+</div>

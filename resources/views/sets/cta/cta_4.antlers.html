@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="flex flex-wrap">
+        <div class="max-w-xl py-12 mr-auto">
+            {{ if title }}
+                {{ partial:components.heading label=title size="h1" color="blue" }}
+            {{ /if }}
+
+            {{ if description }}
+                {{ partial:components.lead label=description size="lg" color="bluegray" class="mt-4" }}
+            {{ /if }}
+
+            {{ if toggle and label }}
+                <div class="flex justify-center mt-8 md:justify-start">
+                    {{ partial:components.button size=button_size color=variant }}
+                </div>
+            {{ /if }}
+
+        </div>
+        <div class="max-w-md mx-auto">
+            <img src="{{ glide:image width="610" height="460"  fit="contain" }}"
+                alt="{{ image:alt }}" class="object-cover w-full h-auto">
+        </div>
+    </div>
+</div>

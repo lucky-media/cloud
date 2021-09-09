@@ -1,0 +1,6 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        import: button

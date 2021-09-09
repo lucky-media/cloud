@@ -1,0 +1,9 @@
+{{ foreach:options as="value|label" }}
+    <label>
+        <input class="text-purple-500 focus:ring-2 focus:ring-purple-500 focus:border-purple-500 focus:ring-opacity-50" type="radio" name="{{ handle }}" value="{{ value }}" {{ old === value ?= "checked" }}>
+        <span class="ml-2 text-bluegray-300">{{ label }}</span>
+    </label>
+    {{ unless inline }}
+        <br>
+    {{ /unless }}
+{{ /foreach:options }}

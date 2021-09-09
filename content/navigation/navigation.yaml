@@ -1,0 +1,5 @@
+title: Navigation
+collections:
+  - pages
+max_depth: 1
+root: true

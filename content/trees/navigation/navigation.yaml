@@ -1,0 +1,19 @@
+tree:
+  -
+    id: 775cc828-f04c-49ef-9f6e-6d66c60c84c6
+    entry: home
+  -
+    id: 7d6749ad-71cb-4db9-9f9e-a6ed07ae285d
+    title: Posts
+    url: /posts
+    data:
+      toggle: false
+  -
+    id: b0c27d08-103d-4a5a-8cca-acd2f7937fba
+    entry: 91fdbbb7-7e55-4bd1-a179-2054429381dc
+    data:
+      toggle: true
+      label: Contact
+      link: 'entry::91fdbbb7-7e55-4bd1-a179-2054429381dc'
+      variant: white
+      button_size: sm

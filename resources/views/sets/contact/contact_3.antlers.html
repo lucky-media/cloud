@@ -1,0 +1,49 @@
+<div class="relative overflow-hidden">
+    <div class="container py-20">
+        {{ if title }}
+            {{ partial:components.heading label=title size="h3" color="blue" line="true" center="true" }}
+        {{ /if }}
+
+        <div class="flex flex-col items-start py-10 md:flex-row">
+            <div class="md:w-6/12 md:ml-10">
+                {{ if description }}
+                    <div class="max-w-md mx-auto mt-4 md:mx-0 md:mr-auto">
+                        {{ partial:components.lead label=description size="xl" color="bluegray" class="text-center md:text-left" }}
+                    </div>
+                {{ /if }}
+
+                {{ if details }}
+                    <ul class="mt-12 space-y-10">
+                        {{ details }}
+                            <li class="flex items-center lg:max-w-sm">
+                                {{ if icon }}
+                                    <div
+                                        class="inline-flex items-center justify-center w-16 h-16 bg-pink-500 rounded-3xl">
+                                        {{ svg src="{{ icon }}" class="w-8 h-8 text-white fill-current"
+                                        }}
+                                    </div>
+                                {{ /if }}
+                                <div class="ml-4">
+                                    {{ if title }}
+                                        {{ partial:components.heading label=title size="h6" color="blue" }}
+                                    {{ /if }}
+                                    {{ if description }}
+                                        {{ partial:components.lead label=description size="base" color="bluegray" class="mt-2" }}
+                                    {{ /if }}
+                                </div>
+                            </li>
+                        {{ /details }}
+                    </ul>
+                {{ /if }}
+            </div>
+            <div class="w-full mt-10 md:ml-auto md:w-5/12 md:mt-0">
+                {{ partial:partials.contact_form }}
+            </div>
+        </div>
+    </div>
+
+    {{# Circle #}}
+    <div class="absolute opacity-30 md:top-0 md:left-[-55%] bottom-80 left-[-100%]  rounded-full xl:w-[1115px] xl:h-[1115px] lg:w-[850px] lg:h-[850px] md:w-[700px] md:h-[700px] w-[600px] h-[600px] bg-purple-100"
+        style="z-index: -1;">
+    </div>
+</div>

@@ -1,0 +1,17 @@
+@layer utilities {
+    .bg-gradient-from-bottom {
+        background: linear-gradient(180deg,
+                rgba(214, 177, 255, 0.5) 0%,
+                rgba(214, 177, 255, 0) 100%);
+    }
+
+    .bg-gradient-from-left {
+        background: linear-gradient(270deg,
+                rgba(214, 177, 255, 0.5) -0.22%,
+                rgba(214, 177, 255, 0.15) 100.31%);
+    }
+}
+
+html {
+    height: 100%;
+}

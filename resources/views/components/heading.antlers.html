@@ -1,0 +1,21 @@
+---
+sizes:
+    h1: 'xl:text-6xl lg:text-5xl md:text-4xl text-3xl'
+    h2: 'md:text-5xl text-3xl'
+    h3: 'md:text-3xl lg:text-4xl text-2xl'
+    h4: 'md:text-3xl text-xl'
+    h5: 'md:text-2xl text-lg'
+    h6: 'md:text-xl text-lg'
+colors:
+    blue: 'text-indigo-900'
+    white: 'text-white'
+    purple: 'text-purple-500'
+---
+
+<{{ as or 'p' }} class="font-bold {{ view }}{{ sizes[size] }} {{ colors[color] }}{{ /view }} {{ class }} {{ center ? 'text-center' : '' }}">
+{{ label }}
+
+{{ if line }}
+    <div class="w-14 h-[2px] bg-indigo-900 mt-2 rounded {{ center ? 'mx-auto' : '' }}"></div>
+{{ /if }}
+</{{ as or 'p' }}>

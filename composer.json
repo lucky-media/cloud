@@ -1,0 +1,9 @@
+{
+    "name": "lucky-media/cloud",
+    "extra": {
+        "statamic": {
+            "name": "Cloud",
+            "description": "Cloud starter kit"
+        }
+    }
+}

@@ -1,0 +1,33 @@
+export_paths:
+  - app/Widgets
+  - app/ViewModels
+  - content/assets
+  - content/globals
+  - content/navigation
+  - content/taxonomies
+  - content/trees
+  - content/collections/posts
+  - content/collections/pages.yaml
+  - content/collections/posts.yaml
+  - content/collections/pages/home.md
+  - content/collections/pages/contact.md
+  - config/statamic/cp.php
+  - resources/forms
+  - resources/fieldsets
+  - resources/blueprints
+  - resources/svg
+  - resources/css
+  - resources/js
+  - resources/views
+  - routes/web.php
+  - public/assets/favicons
+  - public/assets/images
+  - public/assets/logo.svg
+  - public/css
+  - public/js
+  - package.json
+  - tailwind.config.js
+  - webpack.mix.js
+  - flexgap.js
+dependencies:
+  cnj/seotamic: ^2.0

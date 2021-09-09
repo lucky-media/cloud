@@ -1,0 +1,17 @@
+<div class="py-16 bg-purple-500 md:py-12">
+    <div class="container text-center">
+        {{ if title }}
+            {{ partial:components.heading label=title size="h1" color="white" }}
+        {{ /if }}
+
+        {{ if description }}
+            {{ partial:components.lead label=description size="lg" color="white" class="mt-3" }}
+        {{ /if }}
+
+        {{ if toggle and label }}
+            <div class="mt-12">
+                {{ partial:components.button size=button_size color=variant }}
+            </div>
+        {{ /if }}
+    </div>
+</div>

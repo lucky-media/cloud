@@ -1,0 +1,87 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: name
+        field:
+          type: text
+          display: Name
+      -
+        handle: position
+        field:
+          input_type: text
+          antlers: false
+          display: Position
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: email
+        field:
+          type: text
+          input: email
+          display: 'Email Address'
+      -
+        handle: roles
+        field:
+          type: user_roles
+          width: 50
+      -
+        handle: groups
+        field:
+          type: user_groups
+          width: 50
+      -
+        handle: avatar
+        field:
+          type: assets
+          max_files: 1
+          container: assets
+  social_media:
+    display: 'Social Media'
+    fields:
+      -
+        handle: social_media
+        field:
+          fields:
+            -
+              handle: title
+              field:
+                input_type: text
+                antlers: false
+                display: Title
+                type: text
+                icon: text
+                listable: hidden
+            -
+              handle: icon
+              field:
+                options:
+                  twitter: Twitter
+                  github: Github
+                  instagram: Instagram
+                  facebook: Facebook
+                multiple: false
+                clearable: false
+                searchable: true
+                taggable: false
+                push_tags: false
+                cast_booleans: false
+                display: Icon
+                type: select
+                icon: select
+                listable: hidden
+            -
+              handle: link
+              field:
+                display: Link
+                type: link
+                icon: link
+                listable: hidden
+          mode: table
+          reorderable: true
+          display: 'Social Media'
+          type: grid
+          icon: grid
+          listable: hidden

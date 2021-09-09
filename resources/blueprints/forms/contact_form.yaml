@@ -1,0 +1,51 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: name
+        field:
+          placeholder: Name
+          input_type: text
+          antlers: false
+          display: Name
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: email
+        field:
+          placeholder: Email
+          input_type: email
+          antlers: false
+          display: Email
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: subject
+        field:
+          placeholder: Subject
+          input_type: text
+          antlers: false
+          display: Subject
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: body
+        field:
+          placeholder: Message
+          antlers: false
+          display: Body
+          type: textarea
+          icon: textarea
+          listable: hidden
+          validate:
+            - required

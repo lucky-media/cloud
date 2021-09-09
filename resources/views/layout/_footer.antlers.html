@@ -1,0 +1,40 @@
+<div class="w-full h-full bg-pink-100">
+    <div class="container pt-24">
+        <div class="flex flex-col space-y-16 md:flex-row md:space-y-0">
+            <div class="md:w-4/12 md:mr-20 lg:mr-0">
+                {{ if theme:show_logo }}
+                    <a aria-label="logo" href="/">
+                        <img class="object-cover w-auto h-12 mb-6" src="{{ theme:logo }}"
+                            alt="logo">
+                    </a>
+                {{ /if }}
+
+                {{ partial:components.lead label=theme:footer_description size="xl" color="gray" }}
+            </div>
+            {{ nav:footer }}
+                <div class="md:w-3/12 lg:ml-20">
+                    <p class="mb-10 text-xl font-bold text-gray-700">
+                        {{ title }}
+                    </p>
+
+                    {{ if children }}
+                        <ul class="space-y-5 text-lg text-gray-700">
+                            {{ children }}
+                                <li>
+                                    <a href="{{ url }}">
+                                        {{ title }}
+                                    </a>
+                                </li>
+                            {{ /children }}
+                        </ul>
+                    {{ /if }}
+                </div>
+            {{ /nav:footer }}
+        </div>
+    </div>
+    <div class="pt-5 pb-16 mt-16 border-t border-gray-700">
+        <div class="container">
+            {{ partial:components.lead label=theme:footer_copyright size="base" color="bluegray" }}
+        </div>
+    </div>
+</div>

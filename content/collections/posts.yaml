@@ -1,0 +1,12 @@
+title: Posts
+inject:
+  view_model: App\ViewModels\OgImage
+template: posts/show
+layout: layout
+revisions: false
+route: "/posts/{slug}"
+date: true
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
