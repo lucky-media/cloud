@@ -127,6 +127,12 @@ The design of Cloud is done entirely with TailwindCSS. We have added many differ
   * Font Family - default is sans: Mulish.
   * Colors - different nuances of gray, blue-gray, indigo, purple and pink are already included.
 
+## Fonts
+With the latest release of `v1.1` we no longer serve fonts directly from Google Fonts. We now use [Font Source](https://fontsource.org/) to self host them.
+Working with them its easy, just go to their website and search for your desired font, use npm to install it and then include it to the `site.js` file.
+
+More info on the [official documentation of Font Source](https://fontsource.org/docs/introduction).
+
 ## Compiling Assets
 By default we make use of Laravel Mix to compile all the assets. Make sure to run the following commands after installing the starter-kit.
 
