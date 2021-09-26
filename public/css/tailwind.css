@@ -1,4 +1,4 @@
-/*! tailwindcss v2.2.9 | MIT License | https://tailwindcss.com *//*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*! tailwindcss v2.2.16 | MIT License | https://tailwindcss.com *//*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
 /*
 Document
@@ -1599,8 +1599,20 @@ html {
 	margin-top: 1.5rem;
 }
 
+.mb-8 {
+	margin-bottom: 2rem;
+}
+
 .mb-12 {
 	margin-bottom: 3rem;
+}
+
+.mr-5 {
+	margin-right: 1.25rem;
+}
+
+.mr-6 {
+	margin-right: 1.5rem;
 }
 
 .ml-6 {
@@ -1613,18 +1625,6 @@ html {
 
 .ml-2 {
 	margin-left: 0.5rem;
-}
-
-.mb-8 {
-	margin-bottom: 2rem;
-}
-
-.mr-5 {
-	margin-right: 1.25rem;
-}
-
-.mr-6 {
-	margin-right: 1.5rem;
 }
 
 .block {
@@ -1699,10 +1699,6 @@ html {
 	height: 400px;
 }
 
-.h-11 {
-	height: 2.75rem;
-}
-
 .h-10 {
 	height: 2.5rem;
 }
@@ -1769,10 +1765,6 @@ html {
 
 .w-\[400px\] {
 	width: 400px;
-}
-
-.w-11 {
-	width: 2.75rem;
 }
 
 .w-10 {
@@ -2636,6 +2628,10 @@ html {
 		margin-right: 5%;
 	}
 
+	.md\:mb-20 {
+		margin-bottom: 5rem;
+	}
+
 	.md\:mt-5 {
 		margin-top: 1.25rem;
 	}
@@ -2646,10 +2642,6 @@ html {
 
 	.md\:mt-6 {
 		margin-top: 1.5rem;
-	}
-
-	.md\:mb-20 {
-		margin-bottom: 5rem;
 	}
 
 	.md\:h-\[680px\] {
