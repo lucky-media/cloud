@@ -1,0 +1,62 @@
+<div class="container py-20 md:py-24">
+    <div class="flex flex-col items-center text-center justify-center mb-6">
+        {{ if title }}
+            {{ partial:components.heading label=title size="h3" color="blue" class="mb-4" }}
+        {{ /if }}
+
+        {{ if description }}
+            {{ partial:components.lead label=description size="base" color="bluegray" }}
+        {{ /if }}
+    </div>
+
+    <div class="grid pt-10 flex-gap-10 md:flex-gap-5 md:grid-cols-2 xl:grid-cols-3">
+        {{ prices }}
+            <div
+                class="relative flex flex-col bg-white shadow-lg rounded-2xl hover:shadow-xl transition-shadow duration-300 ease-in-out {{ featured ? 'bg-gray-100 border-2 border-purple-500' : 'bg-white border' }}">
+                <div class="flex flex-col justify-start h-full px-5 py-8">
+                    {{ if featured }}
+                        <div class="absolute px-4 py-1 text-white bg-purple-500 rounded-xl -top-3 left-4">
+                            <p class="flex flex-col items-center text-sm font-bold uppercase tracing-widest">
+                                {{ featured_name }}
+                            </p>
+                        </div>
+                    {{ /if }}
+
+                    {{ if title }}
+                        <p class="mb-6 text-sm tracking-widest text-purple-500 uppercase">
+                            {{ title }}
+                        </p>
+                    {{ /if }}
+
+                    <p class="mb-8 text-4xl font-bold text-gray-900">
+                        {{ price }}
+                        {{ if duration }}
+                            <span class="text-xl text-gray-900">
+                                {{ duration }}
+                            </span>
+                        {{ /if }}
+                    </p>
+
+                    {{ if features }}
+                        <div class="space-y-6">
+                            {{ features }}
+                                <div class="flex items-center">
+                                    {{ svg src="check" class="w-6 h-6 mr-2 text-purple-500 fill-current" }}
+                                    <p class="text-bluegray-300">
+                                        {{ title }}
+                                    </p>
+                                </div>
+                            {{ /features }}
+                        </div>
+                    {{ /if }}
+                </div>
+
+                {{ if toggle and label }}
+                    <div class="px-5 py-8">
+                        {{ partial:components.button size=button_size color=variant }}
+                    </div>
+                {{ /if }}
+            </div>
+        {{ /prices }}
+    </div>
+</div>

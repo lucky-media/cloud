@@ -1513,6 +1513,14 @@ html {
 	top: 50%;
 }
 
+.-top-3 {
+	top: -0.75rem;
+}
+
+.left-4 {
+	left: 1rem;
+}
+
 .order-first {
 	order: -9999;
 }
@@ -1615,16 +1623,20 @@ html {
 	margin-right: 1.5rem;
 }
 
+.mb-4 {
+	margin-bottom: 1rem;
+}
+
+.ml-2 {
+	margin-left: 0.5rem;
+}
+
 .ml-6 {
 	margin-left: 1.5rem;
 }
 
 .ml-auto {
 	margin-left: auto;
-}
-
-.ml-2 {
-	margin-left: 0.5rem;
 }
 
 .block {
@@ -1771,6 +1783,10 @@ html {
 	width: 2.5rem;
 }
 
+.w-\[56px\] {
+	width: 56px;
+}
+
 .w-24 {
 	width: 6rem;
 }
@@ -1849,6 +1865,10 @@ html {
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-1 {
+	grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .flex-row {
 	flex-direction: row;
 }
@@ -1867,6 +1887,10 @@ html {
 
 .items-center {
 	align-items: center;
+}
+
+.justify-start {
+	justify-content: flex-start;
 }
 
 .justify-end {
@@ -1927,6 +1951,27 @@ html {
 	margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
 }
 
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+	--tw-space-y-reverse: 0;
+	margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+	margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.divide-y > :not([hidden]) ~ :not([hidden]) {
+	--tw-divide-y-reverse: 0;
+	border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+	border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+
+.divide-purple-500 > :not([hidden]) ~ :not([hidden]) {
+	--tw-divide-opacity: 1;
+	border-color: rgba(144, 88, 223, var(--tw-divide-opacity));
+}
+
+.divide-opacity-50 > :not([hidden]) ~ :not([hidden]) {
+	--tw-divide-opacity: 0.5;
+}
+
 .overflow-hidden {
 	overflow: hidden;
 }
@@ -1961,6 +2006,10 @@ html {
 
 .border-2 {
 	border-width: 2px;
+}
+
+.border {
+	border-width: 1px;
 }
 
 .border-t {
@@ -2029,6 +2078,16 @@ html {
 .bg-gray-200 {
 	--tw-bg-opacity: 1;
 	background-color: rgba(239, 239, 239, var(--tw-bg-opacity));
+}
+
+.bg-gray-100 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(249, 249, 249, var(--tw-bg-opacity));
+}
+
+.bg-black {
+	--tw-bg-opacity: 1;
+	background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
 }
 
 .fill-current {
@@ -2162,6 +2221,11 @@ html {
 	padding-bottom: 6rem;
 }
 
+.py-1 {
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+}
+
 .pt-24 {
 	padding-top: 6rem;
 }
@@ -2188,6 +2252,10 @@ html {
 
 .pr-6 {
 	padding-right: 1.5rem;
+}
+
+.pt-10 {
+	padding-top: 2.5rem;
 }
 
 .text-center {
@@ -2233,6 +2301,11 @@ html {
 	line-height: 16px;
 }
 
+.text-4xl {
+	font-size: 36px;
+	line-height: 45px;
+}
+
 .font-bold {
 	font-weight: 700;
 }
@@ -2251,6 +2324,10 @@ html {
 
 .leading-normal {
 	line-height: 1.5;
+}
+
+.tracking-widest {
+	letter-spacing: 0.1em;
 }
 
 .text-indigo-900 {
@@ -2350,6 +2427,11 @@ html {
 	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-lg {
+	--tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .transition-all {
 	transition-property: all;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -2366,6 +2448,12 @@ html {
 	transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
 	transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
 	transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 150ms;
+}
+
+.transition-shadow {
+	transition-property: box-shadow;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 150ms;
 }
@@ -2480,6 +2568,11 @@ html {
 
 .hover\:underline:hover {
 	text-decoration: underline;
+}
+
+.hover\:shadow-xl:hover {
+	--tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .focus\:border-purple-500:focus {
@@ -2846,6 +2939,16 @@ html {
 	.md\:text-xl {
 		font-size: 20px;
 		line-height: 25px;
+	}
+
+	.md\:flex-gap-5 {
+		margin-top: -1.25rem;
+		margin-left: -1.25rem;
+	}
+
+	.md\:flex-gap-5> * {
+		margin-top: 1.25rem;
+		margin-left: 1.25rem;
 	}
 
 	.md\:flex-gap-6 {

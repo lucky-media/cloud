@@ -50,6 +50,7 @@ Apart from these, you have many ready made components that can be used for creat
 * Logo Cloud (5 sets)
 * Features Section (4 sets)
 * Section with Image (2 sets)
+* Pricing Section (3 sets)
 * Testimonials (4 sets)
 * Blog Section (3 sets)
 * Contact Form (3 sets) 
