@@ -17,7 +17,7 @@ https://user-images.githubusercontent.com/7405502/132662945-0fac4092-5932-40b0-b
 * Main Navigation and Footer Navigation
 * Taxonomies for Posts Categories.
 * Super fast loading time
-* All Images are optimized with Glide.
+* Responsive images partial.
 * [Unicons](https://icon-sets.iconify.design/uil/) used as Icons
 * Single or Multiple Authors
 * Breakpoint debugger plugin for Tailwind
