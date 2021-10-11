@@ -8,8 +8,7 @@
                 <div class="flex flex-col items-start p-8 bg-white md:flex-row xl:p-16 rounded-2xl">
                     {{ if image }}
                         <div class="flex-shrink-0 w-24 h-24 overflow-hidden rounded-full">
-                            <img src="{{ glide:image width="90" height="90" fit="crop_focal" }}"
-                                alt="{{ image:alt }}" class="object-cover w-full h-auto">
+                            {{ partial:components/picture :image="image" cover="true" sizes="(min-width: 120px) 35vw, 80vw" }}
                         </div>
                     {{ /if }}
                     <div class="mt-4 md:mt-0 md:ml-8">

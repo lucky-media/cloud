@@ -3,7 +3,7 @@
     @keydown.escape="isOpen = false" @click.away="isOpen = false">
     <!--Logo etc-->
     <a aria-label="logo" href=" /">
-        <img class="object-cover w-auto h-12" src="{{ theme:logo }}" alt="logo">
+        {{ partial:components/picture :image="theme:logo" class="mb-6 max-h-12" alt="logo" cover="true" sizes="(min-width: 200px) 35vw, 90vw" }}
     </a>
 
     <!--Toggle button (hidden on large screens)-->

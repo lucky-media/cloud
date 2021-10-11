@@ -12,6 +12,7 @@ export_paths:
   - content/collections/pages/home.md
   - content/collections/pages/contact.md
   - config/statamic/cp.php
+  - config/statamic/assets.php
   - resources/forms
   - resources/fieldsets
   - resources/blueprints

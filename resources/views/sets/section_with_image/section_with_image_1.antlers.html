@@ -1,8 +1,7 @@
 <div class="container py-16 md:py-20 xl:py-36">
     <div class="flex flex-wrap lg:flex-nowrap md:items-center">
         <div class="max-w-2xl p-4">
-            <img src="{{ glide:image width="650" height="345" fit="crop_focal" }}"
-                alt="{{ image:alt }}" class="object-cover w-full h-auto">
+            {{ partial:components/picture :image="image" cover="true" sizes="(min-width: 768px) 35vw, 80vw" }}
         </div>
         <div class="lg:w-1/2 md:ml-[5%] mt-12 lg:mt-0 md:mr-6 lg:mr-0">
             <div class="xl:w-9/12">

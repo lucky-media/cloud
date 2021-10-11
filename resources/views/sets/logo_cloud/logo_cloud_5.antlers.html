@@ -20,9 +20,7 @@
     <div class="max-w-md py-16 mx-auto mt-12 lg:mx-0 lg:mr-auto md:mt-0 lg:py-0">
         <div class="grid grid-cols-2 md:grid-cols-4 flex-gap-10">
             {{ images }}
-                <img src="{{ glide:url width="150" height="50" fit="contain" }}"
-                    alt="{{ alt }}"
-                    class="object-cover w-auto h-auto mx-auto max-h-14">
+                {{ partial:components/picture :image="url" class="mx-auto max-h-14" cover="true" sizes="(min-width: 64px) 35vw, 60vw" }}
             {{ /images }}
         </div>
     </div>

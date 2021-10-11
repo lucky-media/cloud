@@ -12,8 +12,7 @@
                 <div class="flex flex-col overflow-hidden bg-white shadow-3xl rounded-xl">
                     <a aria-label="{{ image:alt or title }}"
                         href="{{ url }}">
-                        <img src="{{ glide:image width="650" height="400" fit="crop_focal" }}"
-                            alt="{{ image:alt or title }}" class="object-cover w-full h-64">
+                        {{ partial:components/picture :image="image" cover="true" class="h-64" sizes="(min-width: 768px) 35vw, 80vw" }}
                     </a>
                     <div class="flex flex-col justify-between h-full p-6">
                         {{ if category }}

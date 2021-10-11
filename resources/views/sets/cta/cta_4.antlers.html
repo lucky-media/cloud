@@ -17,8 +17,7 @@
 
         </div>
         <div class="max-w-md mx-auto">
-            <img src="{{ glide:image width="610" height="460"  fit="contain" }}"
-                alt="{{ image:alt }}" class="object-cover w-full h-auto">
+            {{ partial:components/picture :image="image" cover="true" sizes="(min-width: 768px) 35vw, 80vw" }}
         </div>
     </div>
 </div>

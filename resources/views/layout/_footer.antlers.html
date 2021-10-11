@@ -4,8 +4,7 @@
             <div class="md:w-4/12 md:mr-20 lg:mr-0">
                 {{ if theme:show_logo }}
                     <a aria-label="logo" href="/">
-                        <img class="object-cover w-auto h-12 mb-6" src="{{ theme:logo }}"
-                            alt="logo">
+                        {{ partial:components/picture :image="theme:logo" alt="footer logo" class="mb-6 max-h-12" cover="true" sizes="(min-width: 200px) 35vw, 90vw" }}
                     </a>
                 {{ /if }}
 

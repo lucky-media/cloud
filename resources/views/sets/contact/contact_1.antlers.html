@@ -6,8 +6,7 @@
     <div class="flex flex-wrap py-20">
         <div class="mb-10 md:w-7/12 md:mb-0">
             <div class="max-w-3xl mx-auto">
-                <img src="{{ glide:image width="740" fit="crop_focal" }}"
-                    alt="{{ image:alt }}" class="object-cover w-full h-auto">
+                {{ partial:components/picture :image="image" cover="true" sizes="(min-width: 768px) 35vw, 80vw" }}
             </div>
         </div>
         <div class="w-full md:w-5/12">

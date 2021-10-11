@@ -25,9 +25,7 @@
                     {{ author }}
                         <div class="flex items-center mt-16">
                             <div class="w-20 h-20 overflow-hidden rounded-xl">
-                                <img src="{{ glide:avatar width="80" height="80" fit="crop_focal" }}"
-                                    alt="{{ avatar:alt or name }}"
-                                    class="object-cover w-full h-auto">
+                                {{ partial:components/picture :image="avatar" cover="true" sizes="(min-width: 120px) 35vw, 80vw" }}
                             </div>
                             <div class="ml-4">
                                 {{ partial:components.heading label=name size="h5" color="blue" }}

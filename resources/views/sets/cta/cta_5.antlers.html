@@ -15,8 +15,7 @@
                 {{ /if }}
             </div>
             <div class="max-w-2xl mx-auto mt-16 ml-4 xl:ml-auto xl:mt-0">
-                <img src="{{ glide:image width="645" height="431"  fit="crop_focal" }}"
-                    alt="{{ image:alt }}" class="object-cover w-full h-auto">
+                {{ partial:components/picture :image="image" cover="true" sizes="(min-width: 768px) 35vw, 80vw" }}
             </div>
         </div>
     </div>

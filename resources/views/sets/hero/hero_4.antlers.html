@@ -20,7 +20,6 @@
     </div>
 
     <div class="max-w-3xl mx-auto mt-12">
-        <img src="{{ glide:image width="610" height="460" fit="crop_focal" }}" alt="{{ image:alt }}"
-            class="object-cover w-full h-auto">
+        {{ partial:components/picture :image="image" cover="true" sizes="(min-width: 768px) 35vw, 80vw" }}
     </div>
 </div>

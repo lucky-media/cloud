@@ -4,8 +4,7 @@
     </div>
 
     <div class="h-64 md:h-96">
-        <img src="{{ glide:image width="1200" height="400" fit="crop_focal" }}" alt="{{ image:alt or title }}"
-            class="object-cover w-full h-full">
+        {{ partial:components/picture :image="image" cover="true" sizes="(min-width: 1200px) 35vw, 90vw" }}
     </div>
 
     <div class="flex flex-row items-center my-8 space-x-1 md:space-x-4">
@@ -33,8 +32,7 @@
             <div class="flex flex-row max-w-4xl mt-10 md:mt-20">
                 <div class="flex items-center w-1/2">
                     <div class="w-20 h-20 overflow-hidden rounded-xl">
-                        <img src="{{ glide:avatar width="80" height="80" fit="crop_focal" }}"
-                            alt="{{ avatar:alt or name }}" class="object-cover w-full h-auto">
+                        {{ partial:components/picture :image="avatar" cover="true" sizes="(min-width: 120px) 35vw, 60vw" }}
                     </div>
                     <div class="ml-4">
                         {{ partial:components.heading label=name size="h5" color="blue" }}

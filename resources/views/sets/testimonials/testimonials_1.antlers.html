@@ -4,8 +4,7 @@
             <div class="flex items-center md:w-5/12">
                 {{ if image }}
                     <div class="w-20 h-20 overflow-hidden rounded-xl">
-                        <img src="{{ glide:image width="75" height="75"  fit="crop_focal" }}"
-                            alt="{{ image:alt }}" class="object-cover w-full h-auto">
+                        {{ partial:components/picture :image="image" cover="true" sizes="(min-width: 120px) 35vw, 80vw" }}
                     </div>
                 {{ /if }}
                 <div class="ml-5">

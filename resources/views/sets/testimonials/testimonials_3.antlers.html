@@ -4,9 +4,9 @@
             <div class="flex flex-wrap">
                 {{ if image }}
                     <div class="md:ml-auto md:max-w-sm">
-                        <img src="{{ glide:image width="350" height="350" fit="crop_focal" }}"
-                            alt="{{ image:alt }}"
-                            class="object-cover w-full h-auto rounded-full">
+                        <div class="overflow-hidden rounded-full">
+                            {{ partial:components/picture :image="image" cover="true" sizes="(min-width: 350px) 35vw, 80vw" }}
+                        </div>
                     </div>
                 {{ /if }}
                 <div class="max-w-xl mx-auto mt-10 md:mt-0">
