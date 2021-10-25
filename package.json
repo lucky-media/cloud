@@ -16,16 +16,16 @@
         "browser-sync": "^2.27.5",
         "browser-sync-webpack-plugin": "^2.3.0",
         "cross-env": "^7.0.3",
-        "laravel-mix": "^6.0.31",
-        "postcss": "^8.3.9",
+        "laravel-mix": "^6.0.34",
+        "postcss": "^8.3.11",
         "postcss-import": "^14.0.2",
         "postcss-nested": "^5.0.6",
         "postcss-preset-env": "^6.7.0",
-        "tailwindcss": "^2.2.16",
-        "tailwindcss-debug-screens": "^2.1.0",
+        "tailwindcss": "^2.2.17",
+        "tailwindcss-debug-screens": "^2.2.0",
         "@fontsource/mulish": "^4.5.1"
     },
     "dependencies": {
-        "alpinejs": "^3.4.1"
+        "alpinejs": "^3.4.2"
     }
 }
