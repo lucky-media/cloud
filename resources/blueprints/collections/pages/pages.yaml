@@ -505,8 +505,6 @@ sections:
                     type: textarea
                     icon: textarea
                     listable: hidden
-                    validate:
-                      - required
                 -
                   handle: instructions
                   field:

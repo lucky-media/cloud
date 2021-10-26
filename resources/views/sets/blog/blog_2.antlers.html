@@ -1,9 +1,8 @@
 <div class="relative py-16 overflow-hidden md:py-32">
 
     <div class="container">
-        {{ if title }}
-            {{ partial:components.heading label=title size="h1" color="blue" center="true" }}
-        {{ /if }}
+        {{ partial:components.heading label=title size="h1" color="blue" center="true" }}
+
         {{ if description }}
             {{ partial:components.lead label=description size="lg" color="bluegray" class="mt-4 text-center" }}
         {{ /if }}
