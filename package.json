@@ -12,20 +12,20 @@
     "devDependencies": {
         "@tailwindcss/forms": "^0.3.4",
         "@tailwindcss/typography": "^0.4.1",
-        "autoprefixer": "^10.3.7",
-        "browser-sync": "^2.27.5",
+        "autoprefixer": "^10.4.0",
+        "browser-sync": "^2.27.7",
         "browser-sync-webpack-plugin": "^2.3.0",
         "cross-env": "^7.0.3",
-        "laravel-mix": "^6.0.34",
-        "postcss": "^8.3.11",
+        "laravel-mix": "^6.0.39",
+        "postcss": "^8.4.4",
         "postcss-import": "^14.0.2",
         "postcss-nested": "^5.0.6",
-        "postcss-preset-env": "^6.7.0",
-        "tailwindcss": "^2.2.17",
+        "postcss-preset-env": "^7.0.1",
+        "tailwindcss": "^2.2.19",
         "tailwindcss-debug-screens": "^2.2.0",
-        "@fontsource/mulish": "^4.5.1"
+        "@fontsource/mulish": "^4.5.2"
     },
     "dependencies": {
-        "alpinejs": "^3.4.2"
+        "alpinejs": "^3.7.0"
     }
 }
