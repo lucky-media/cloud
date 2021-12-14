@@ -1,14 +1,11 @@
 const config = require("tailwindcss/defaultTheme");
 
 module.exports = {
-    purge: {
-        content: [
-            "./resources/**/*.antlers.html",
-            "./resources/**/*.blade.php",
-            "./content/**/*.md",
-        ],
-    },
-    mode: "jit",
+    content: [
+        "./resources/**/*.antlers.html",
+        "./resources/**/*.blade.php",
+        "./content/**/*.md",
+    ],
     theme: {
         container: {
             center: true,

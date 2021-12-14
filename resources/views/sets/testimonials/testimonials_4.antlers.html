@@ -7,7 +7,7 @@
             {{ testimonial }}
                 <div class="flex flex-col items-start p-8 bg-white md:flex-row xl:p-16 rounded-2xl">
                     {{ if image }}
-                        <div class="flex-shrink-0 w-24 h-24 overflow-hidden rounded-full">
+                        <div class="w-24 h-24 overflow-hidden rounded-full shrink-0">
                             {{ partial:components/picture :image="image" cover="true" sizes="(min-width: 120px) 35vw, 80vw" }}
                         </div>
                     {{ /if }}
