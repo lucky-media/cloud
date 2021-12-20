@@ -1,5 +1,5 @@
 # ☁️ Cloud
-Cloud is the Statamic Starter Kit that you need. It's perfect for creating a personal website, a Saas or even a blog. You can build your website on the fly in just a few minutes. Add your logo, choose your preferred design components and write some content. That's it, as simple as that.
+Cloud is the Statamic Starter Kit that you need. It's perfect for creating a personal website, a SaaS or even a blog. You can build your website on the fly in just a few minutes. Add your logo, choose your preferred design components and write some content. That's it, as simple as that.
 
 ## Why Cloud?
 We have tried to make it **entirely dynamic** so that you don't have to make any changes to the code. Your website can be built and modified entirely from the **control panel**, but you are also free to make further modifications. We have included more than **30 component designs** that can be combined to deliver a **professional looking website**. We have thoroughly **tested** all the components and other design elements to make sure that they adapt to the **different screen sizes**. Plus, if you do change the primary colors then you can make even more combinations and your websites will look amazing.
@@ -45,7 +45,7 @@ After installing **Cloud**, you will see that we have preconfigured some pages a
 
 Apart from these, you have many ready made components that can be used for creating your website. Each component has about **2-5 different variants** of design that you can choose from. We have designed the following components:
 
-* Here Section (4 sets)
+* Hero Section (4 sets)
 * Call To Action (5 sets)
 * Logo Cloud (5 sets)
 * Features Section (4 sets)
@@ -146,7 +146,7 @@ By default we make use of Laravel Mix to compile all the assets. Make sure to ru
 Please refer to the issues tab to submit a Bug or a Feature Request.
 
 ## Credits
-Cloud was brought to you by the lovely team at [Lucky Media](https://www.luckymedia.dev/), we are a digital agency focused on professional, innovative, user-oriented web design & development.
+Cloud was brought to you by the lovely team at [Lucky Media](https://www.luckymedia.dev/), we are a digital agency focused on professional, innovative, user-oriented web design & development. If you have any project in mind feel free to contact us.
 
 Last but not least thanks to the creators/contributors of the following packages which made Cloud a reality:
 
