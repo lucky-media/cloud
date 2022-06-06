@@ -10,22 +10,23 @@
         "production": "mix --production"
     },
     "devDependencies": {
-        "@tailwindcss/forms": "^0.5.0",
+        "@tailwindcss/forms": "^0.5.2",
         "@tailwindcss/typography": "^0.5.2",
-        "autoprefixer": "^10.4.4",
-        "browser-sync": "^2.27.9",
+        "autoprefixer": "^10.4.7",
+        "browser-sync": "^2.27.10",
         "browser-sync-webpack-plugin": "^2.3.0",
         "cross-env": "^7.0.3",
         "laravel-mix": "^6.0.43",
-        "postcss": "^8.4.12",
-        "postcss-import": "^14.0.2",
+        "postcss": "^8.4.14",
+        "postcss-import": "^14.1.0",
         "postcss-nested": "^5.0.6",
-        "postcss-preset-env": "^7.4.2",
-        "tailwindcss": "^3.0.23",
+        "postcss-preset-env": "^7.6.0",
+        "tailwindcss": "^3.0.24",
         "tailwindcss-debug-screens": "^2.2.1",
-        "@fontsource/mulish": "^4.5.5"
+        "@fontsource/mulish": "^4.5.10"
     },
     "dependencies": {
-        "alpinejs": "^3.9.1"
+        "@alpinejs/collapse": "^3.10.2",
+        "alpinejs": "^3.10.2"
     }
 }

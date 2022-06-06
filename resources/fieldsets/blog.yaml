@@ -1,0 +1,52 @@
+title: 'Blog Section'
+fields:
+  -
+    handle: version
+    field:
+      options:
+        blog_1: 'Blog 1'
+        blog_2: 'Blog 2'
+        blog_3: 'Blog 3'
+      display: Variant
+      type: button_group
+      icon: button_group
+      listable: hidden
+      validate:
+        - required
+      default: blog_1
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      listable: hidden
+      validate:
+        - required
+  -
+    handle: description
+    field:
+      antlers: false
+      display: Description
+      type: textarea
+      icon: textarea
+      listable: hidden
+  -
+    handle: instructions
+    field:
+      display: Instructions
+      type: section
+      icon: section
+      instructions: 'Use this blog section in the home page or somewhere else to display only the latest 3 posts.'
+      listable: hidden
+  -
+    handle: posts
+    field:
+      mode: select
+      display: Posts
+      type: collections
+      icon: collections
+      listable: hidden
+      instructions: 'It will only show the latest 3 entries'

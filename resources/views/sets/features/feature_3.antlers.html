@@ -5,6 +5,7 @@
                 {{ if title }}
                     {{ partial:components.heading label=title size="h3" color="blue" }}
                 {{ /if }}
+
                 {{ if description }}
                     <div class="mt-3 md:max-w-[265px]">
                         {{ partial:components.lead label=description size="base" color="bluegray" }}
@@ -12,7 +13,7 @@
                 {{ /if }}
             </div>
             <div class="lg:w-8/12">
-                <div class="grid flex-gap-10 md:grid-cols-2">
+                <div class="grid gap-10 md:grid-cols-2">
                     {{ items }}
                         <div class="flex items-center p-5 bg-white shadow-3xl rounded-xl">
                             {{ if icon }}
@@ -22,6 +23,7 @@
                                 {{ if title }}
                                     {{ partial:components.heading label=title size="h5" color="blue" }}
                                 {{ /if }}
+
                                 {{ if description }}
                                     {{ partial:components.lead label=description size="base" color="bluegray" class="mt-2" }}
                                 {{ /if }}

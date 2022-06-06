@@ -4,24 +4,24 @@
             <div class="flex items-center md:w-5/12">
                 {{ if image }}
                     <div class="w-20 h-20 overflow-hidden rounded-xl">
-                        {{ partial:components/picture :image="image" cover="true" sizes="(min-width: 120px) 35vw, 80vw" }}
+                        {{ partial:components/picture cover="true" }}
                     </div>
                 {{ /if }}
                 <div class="ml-5">
                     {{ if name }}
-                        {{ partial:components.heading label=name size="h5" color="blue" }}
+                        {{ partial:components.heading :label="name" size="h5" color="blue" }}
                     {{ /if }}
                     {{ if position }}
-                        {{ partial:components.lead label=position size="base" color="bluegray" class="mt-2" }}
+                        {{ partial:components.lead :label="position" size="base" color="bluegray" class="mt-2" }}
                     {{ /if }}
                 </div>
             </div>
             <div class="mt-10 md:w-7/12 md:mt-0">
                 {{ if description }}
                     <div class="flex items-start md:max-w-xl">
-                        {{ svg src="quote.svg" class="w-6 h-6 text-purple-500 fill-current shrink-0" }}
+                        {{ svg src="quote" class="w-6 h-6 text-purple-500 fill-current shrink-0" }}
 
-                        {{ partial:components.lead label=description size="xl" color="bluegray" class="ml-6" }}
+                        {{ partial:components.lead :label="description" size="xl" color="bluegray" class="ml-6" }}
                     </div>
                 {{ /if }}
             </div>

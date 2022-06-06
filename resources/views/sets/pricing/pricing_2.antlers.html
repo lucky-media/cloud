@@ -2,19 +2,19 @@
     <div class="container py-20 md:py-24">
         <div class="flex flex-col items-start max-w-lg mb-6">
             {{ if title }}
-                {{ partial:components.heading label=title size="h3" color="blue" line="true" }}
+                {{ partial:components.heading :label="title" size="h3" color="blue" line="true" }}
                 <div class="w-[56px] h-[2px] bg-black mb-2"></div>
             {{ /if }}
 
             {{ if description }}
-                {{ partial:components.lead label=description size="lg" color="bluegray" class="mt-4" }}
+                {{ partial:components.lead :label="description" size="lg" color="bluegray" class="mt-4" }}
             {{ /if }}
         </div>
 
-        <div class="grid pt-10 grid-cols-1 flex-gap-10 md:flex-gap-5 md:grid-cols-2">
+        <div class="grid grid-cols-1 gap-10 pt-10 md:gap-5 md:grid-cols-2">
             {{ prices }}
                 <div
-                    class="flex flex-col overflow-hidden bg-white border shadow-lg rounded-2xl hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                    class="flex flex-col overflow-hidden transition-shadow duration-300 ease-in-out bg-white border shadow-lg rounded-2xl hover:shadow-xl">
                     <div class="flex flex-col justify-start h-full px-5 py-8">
                         {{ if title }}
                             <p class="mb-6 text-sm tracking-widest text-purple-500 uppercase">
@@ -25,7 +25,8 @@
                         <p class="mb-2 text-4xl font-bold text-gray-900">
                             {{ price }}
                             {{ if duration }}
-                                <span class="mt-3 ml-2 text-lg text-gray-500">
+                                <span
+                                    class="mt-3 ml-2 text-lg text-gray-500">
                                     {{ duration }}
                                 </span>
                             {{ /if }}
@@ -54,7 +55,7 @@
 
                     {{ if toggle and label }}
                         <div class="px-5 py-8">
-                            {{ partial:components.button size=button_size color=variant }}
+                            {{ partial:components.button size="{button_size}" color="{variant}" }}
                         </div>
                     {{ /if }}
                 </div>

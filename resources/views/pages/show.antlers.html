@@ -1,3 +1,14 @@
+{{ if page_header }}
+    <div class="container py-20 md:py-14">
+        {{ if alignment === 'center' }}
+            {{ partial:components.heading :label="title" size="h1" color="blue" line="true" center="true" }}
+
+        {{ else }}
+            {{ partial:components.heading :label="title" size="h1" color="blue" line="true" }}
+        {{ /if }}
+    </div>
+{{ /if }}
+
 {{ blocks }}
     {{ partial src="sets/{type}/{version}" }}
 {{ /blocks }}

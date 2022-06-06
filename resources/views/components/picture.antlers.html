@@ -12,7 +12,7 @@
                         {{ glide:url preset='lg-webp' }} 1280w,
                         {{ glide:url preset='xl-webp' }} 1440w,
                         {{ glide:url preset='2xl-webp' }} 1680w"
-                    sizes="{{ sizes }}"
+                    sizes="{{ sizes ?? '(min-width: 768px) 35vw, 80vw' }}"
                     type="image/webp"
                 >
                 <source
@@ -23,7 +23,7 @@
                         {{ glide:url preset='lg' }} 1280w,
                         {{ glide:url preset='xl' }} 1440w,
                         {{ glide:url preset='2xl' }} 1680w"
-                    sizes="{{ sizes }}"
+                    sizes="{{ sizes ?? '(min-width: 768px) 35vw, 80vw' }}"
                     type="{{ image.mime_type }}"
                 >
                 <img

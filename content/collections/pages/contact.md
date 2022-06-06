@@ -11,10 +11,10 @@ seotamic_open_graph_description: general
 seotamic_twitter_title: title
 seotamic_twitter_description: general
 updated_by: 369c0269-580d-4c49-af9f-0450df6fea35
-updated_at: 1630975106
+updated_at: 1653856587
 blocks:
   -
-    version: contact_2
+    version: contact_1
     title: 'Contact Us'
     description: 'Need more? Reach us, we provide extra options if you contact us directly for more or other services.'
     button_text: Submit
@@ -40,4 +40,5 @@ blocks:
         enabled: true
     type: contact
     enabled: true
+    image: images/contact.png
 ---

@@ -1,14 +1,14 @@
 <div class="relative overflow-hidden">
     <div class="container py-20">
         {{ if title }}
-            {{ partial:components.heading label=title size="h3" color="blue" line="true" center="true" }}
+            {{ partial:components.heading :label="title" size="h3" color="blue" line="true" center="true" }}
         {{ /if }}
 
         <div class="flex flex-col items-start py-10 md:flex-row">
             <div class="md:w-6/12 md:ml-10">
                 {{ if description }}
                     <div class="max-w-md mx-auto mt-4 md:mx-0 md:mr-auto">
-                        {{ partial:components.lead label=description size="xl" color="bluegray" class="text-center md:text-left" }}
+                        {{ partial:components.lead :label="description" size="xl" color="bluegray" class="text-center md:text-left" }}
                     </div>
                 {{ /if }}
 
@@ -19,16 +19,15 @@
                                 {{ if icon }}
                                     <div
                                         class="inline-flex items-center justify-center w-16 h-16 bg-pink-500 rounded-3xl">
-                                        {{ svg src="{{ icon }}" class="w-8 h-8 text-white fill-current"
-                                        }}
+                                        {{ svg :src="icon" class="w-8 h-8 text-white fill-current" }}
                                     </div>
                                 {{ /if }}
                                 <div class="ml-4">
                                     {{ if title }}
-                                        {{ partial:components.heading label=title size="h6" color="blue" }}
+                                        {{ partial:components.heading :label="title" size="h6" color="blue" }}
                                     {{ /if }}
                                     {{ if description }}
-                                        {{ partial:components.lead label=description size="base" color="bluegray" class="mt-2" }}
+                                        {{ partial:components.lead :label="description" size="base" color="bluegray" class="mt-2" }}
                                     {{ /if }}
                                 </div>
                             </li>

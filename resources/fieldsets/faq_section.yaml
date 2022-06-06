@@ -1,0 +1,99 @@
+title: 'Faq Section'
+fields:
+  -
+    handle: version
+    field:
+      options:
+        faq_section_1: 'Variant 1'
+        faq_section_2: 'Variant 2'
+        faq_section_3: 'Variant 3'
+        faq_section_4: 'Variant 4'
+      display: Variant
+      type: button_group
+      icon: button_group
+      listable: hidden
+      validate:
+        - required
+      default: faq_section_1
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      read_only: false
+      validate:
+        - required
+  -
+    handle: image
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      max_files: 1
+      display: Image
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
+    handle: items
+    field:
+      collapse: false
+      sets:
+        new_set:
+          display: 'New Set'
+          fields:
+            -
+              handle: title
+              field:
+                input_type: text
+                antlers: false
+                display: Title
+                type: text
+                icon: text
+                instructions: 'Enter your question here.'
+                listable: hidden
+                instructions_position: above
+                read_only: false
+            -
+              handle: content
+              field:
+                always_show_set_button: false
+                buttons:
+                  - h3
+                  - bold
+                  - italic
+                  - unorderedlist
+                  - orderedlist
+                  - anchor
+                save_html: false
+                toolbar_mode: fixed
+                link_noopener: true
+                link_noreferrer: true
+                target_blank: true
+                reading_time: false
+                fullscreen: true
+                allow_source: false
+                enable_input_rules: true
+                enable_paste_rules: true
+                antlers: false
+                display: Content
+                type: bard
+                icon: bard
+                listable: hidden
+                instructions_position: above
+                read_only: false
+      display: Items
+      type: replicator
+      icon: replicator
+      listable: hidden
+      instructions_position: above
+      read_only: false

@@ -1,0 +1,91 @@
+title: 'Contact Section'
+fields:
+  -
+    handle: version
+    field:
+      options:
+        contact_1: 'Variant 1'
+        contact_2: 'Variant 2'
+        contact_3: 'Variant 3'
+      display: Variant
+      type: button_group
+      icon: button_group
+      listable: hidden
+      default: contact_1
+  -
+    handle: image
+    field:
+      mode: grid
+      container: assets
+      restrict: false
+      allow_uploads: true
+      max_files: 1
+      display: Image
+      type: assets
+      icon: assets
+      listable: hidden
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      listable: hidden
+      validate:
+        - required
+  -
+    handle: description
+    field:
+      antlers: false
+      display: Description
+      type: textarea
+      icon: textarea
+      listable: hidden
+  -
+    handle: details
+    field:
+      collapse: false
+      sets:
+        items:
+          display: Details
+          fields:
+            -
+              handle: icon
+              field:
+                options:
+                  email: Email
+                  address: Address
+                  phone: Phone
+                multiple: false
+                clearable: false
+                searchable: true
+                taggable: false
+                push_tags: false
+                cast_booleans: false
+                display: Icon
+                type: select
+                icon: select
+                listable: hidden
+            -
+              handle: title
+              field:
+                input_type: text
+                antlers: false
+                display: Title
+                type: text
+                icon: text
+                listable: hidden
+            -
+              handle: description
+              field:
+                antlers: false
+                display: Description
+                type: textarea
+                icon: textarea
+                listable: hidden
+      display: 'Contact Details'
+      type: replicator
+      icon: replicator
+      listable: hidden

@@ -2,21 +2,21 @@
     <div class="flex flex-wrap lg:flex-nowrap md:items-center">
         <div class="lg:w-5/12 md:ml-[5%] mt-12 md:mt-0 md:mr-6 lg:mr-0">
             {{ if title }}
-                {{ partial:components.heading label=title size="h3" color="blue" line="true" }}
+                {{ partial:components.heading :label="title" size="h3" color="blue" line="true" }}
             {{ /if }}
 
             {{ if description }}
-                {{ partial:components.lead label=description size="xl" color="bluegray" class="mt-4" }}
+                {{ partial:components.lead :label="description" size="xl" color="bluegray" class="mt-4" }}
             {{ /if }}
 
             {{ if toggle and label }}
                 <div class="flex justify-center mt-16 md:justify-start">
-                    {{ partial:components.button size=button_size color=variant }}
+                    {{ partial:components.button size="{button_size}" color="{variant}" }}
                 </div>
             {{ /if }}
         </div>
-        <div class="order-first max-w-2xl p-4 mx-auto md:mt-6 lg:mt-0 md:order-last ">
-            {{ partial:components/picture :image="image" cover="true" sizes="(min-width: 768px) 35vw, 80vw" }}
+        <div class="order-first max-w-2xl p-4 mx-auto md:mt-6 lg:mt-0 md:order-last">
+            {{ partial:components/picture cover="true" }}
         </div>
     </div>
 </div>

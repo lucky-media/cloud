@@ -1,6 +1,6 @@
 <div class="container pb-16 md:pb-28">
     <div class="py-8 md:py-16">
-        {{ partial:components.heading label=title size="h1" color="blue" line="true" center="true" }}
+        {{ partial:components.heading :label="title" size="h1" color="blue" line="true" center="true" }}
     </div>
 
     <div class="h-64 md:h-96">
@@ -12,7 +12,7 @@
             {{ partial:components.pill }}
         {{ /category }}
 
-        {{ partial:components.lead label=date size="base" color="bluegray" }}
+        {{ partial:components.lead :label="date" size="base" color="bluegray" }}
 
         <p class="text-bluegray-300">|</p>
 
@@ -22,7 +22,7 @@
     </div>
 
     <div class="max-w-4xl">
-        <div class="prose prose-lg text-bluegray-300 max-w-none">
+        <div class="prose prose-lg prose-p:text-bluegray-300 prose-a:text-purple-500 prose-a:underline max-w-none">
             {{ content }}
         </div>
     </div>
@@ -35,19 +35,19 @@
                         {{ partial:components/picture :image="avatar" cover="true" sizes="(min-width: 120px) 35vw, 60vw" }}
                     </div>
                     <div class="ml-4">
-                        {{ partial:components.heading label=name size="h5" color="blue" }}
+                        {{ partial:components.heading :label="name" size="h5" color="blue" }}
 
                         {{ if position }}
-                            {{ partial:components.lead label=position size="base" color="bluegray" class="mt-3" }}
+                            {{ partial:components.lead :label="position" size="base" color="bluegray" class="mt-3" }}
                         {{ /if }}
                     </div>
                 </div>
                 {{ if social_media }}
                     <div class="flex flex-col w-1/2 space-y-5 md:ml-8">
                         {{ social_media }}
-                            <a target="_blank" class="inline-flex items-center text-sm group hover:text-purple-500"
-                                href="{{ link }}">
-                                {{ svg src="{{ icon }}" class="w-6 h-6 mr-3 text-gray-500 fill-current group-hover:text-purple-500" }}
+                            <a target="_blank" aria-label="{{ icon }}"
+                                class="inline-flex items-center text-sm group hover:text-purple-500" href="{{ link }}">
+                                {{ svg :src="icon" class="w-6 h-6 mr-3 text-gray-500 fill-current group-hover:text-purple-500" }}
                                 {{ title }}
                             </a>
                         {{ /social_media }}

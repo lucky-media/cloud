@@ -129,6 +129,48 @@ sections:
           max_files: 1
           validate:
             - image
+  pagenotfound:
+    display: '404 Page'
+    fields:
+      -
+        handle: page_title
+        field:
+          input_type: text
+          antlers: false
+          default: 'Page not found'
+          display: 'Page Heading'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+      -
+        handle: page_desc
+        field:
+          always_show_set_button: false
+          buttons:
+            - bold
+            - italic
+            - anchor
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: true
+          link_noreferrer: true
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          antlers: false
+          display: 'Page Description'
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          container: assets
   footer:
     display: Footer
     fields:

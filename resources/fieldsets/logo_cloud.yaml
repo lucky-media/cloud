@@ -1,0 +1,50 @@
+title: 'Logo Cloud'
+fields:
+  -
+    handle: version
+    field:
+      options:
+        logo_cloud_1: 'Variant 1'
+        logo_cloud_2: 'Variant 2'
+        logo_cloud_3: 'Variant 3'
+        logo_cloud_4: 'Variant 4'
+        logo_cloud_5: 'Variant 5'
+      display: Variant
+      type: button_group
+      icon: button_group
+      listable: hidden
+      validate:
+        - required
+      default: logo_cloud_1
+  -
+    handle: images
+    field:
+      mode: grid
+      container: assets
+      restrict: false
+      allow_uploads: true
+      display: Images
+      type: assets
+      icon: assets
+      listable: hidden
+      validate:
+        - required
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      listable: hidden
+  -
+    handle: description
+    field:
+      antlers: false
+      display: Description
+      type: textarea
+      icon: textarea
+      listable: hidden
+  -
+    import: button

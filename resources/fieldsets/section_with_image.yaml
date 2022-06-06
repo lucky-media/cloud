@@ -1,0 +1,53 @@
+title: 'Section With Image'
+fields:
+  -
+    handle: version
+    field:
+      options:
+        section_with_image_1: 'Variant 1'
+        section_with_image_2: 'Variant 2'
+      display: Variant
+      type: button_group
+      icon: button_group
+      listable: hidden
+      validate:
+        - required
+      default: section_with_image_1
+  -
+    handle: image
+    field:
+      mode: grid
+      container: assets
+      restrict: false
+      allow_uploads: true
+      max_files: 1
+      display: Image
+      type: assets
+      icon: assets
+      listable: hidden
+      validate:
+        - required
+      show_filename: true
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      listable: hidden
+      validate:
+        - required
+  -
+    handle: description
+    field:
+      antlers: false
+      display: Description
+      type: textarea
+      icon: textarea
+      listable: hidden
+      validate:
+        - required
+  -
+    import: button

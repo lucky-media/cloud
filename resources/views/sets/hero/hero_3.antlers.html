@@ -2,20 +2,20 @@
 
     <div class="max-w-3xl mx-auto mb-6 text-center">
         {{ if title }}
-            {{ partial:components.heading label=title size="h1" color="blue" }}
+            {{ partial:components.heading :label="title" size="h1" color="blue" }}
         {{ /if }}
 
         {{ if description }}
-            {{ partial:components.lead label=description size="xl" color="bluegray" class="mt-4" }}
+            {{ partial:components.lead :label="description" size="xl" color="bluegray" class="mt-4" }}
         {{ /if }}
     </div>
 
     {{ if toggle and label }}
-        {{ partial:components.button label=label size=button_size color=variant }}
+        {{ partial:components.button size="{button_size}" color="{variant}" }}
     {{ /if }}
 
     {{# Add Width #}}
     <div class="max-w-3xl mx-auto mt-12">
-        {{ partial:components/picture :image="image" cover="true" sizes="(min-width: 768px) 35vw, 80vw" }}
+        {{ partial:components/picture cover="true" }}
     </div>
 </div>

@@ -1,0 +1,26 @@
+<div class="relative flex items-center py-32 overflow-hidden md:py-0 md:h-screen">
+    <div class="hidden lg:block absolute lg:w-[1115px] lg:h-[1115px] rounded-full -right-80 md:-right-[450px] bg-opacity-30"
+        style="background: linear-gradient(#9F79C8, #A580CB,#B492D3,#CDB0E1,#D1B4E3,#DBC4E9,#EBDEF3); opacity: 0.5;">
+    </div>
+    <div class="container">
+        <div class="flex flex-wrap md:-mx-5">
+            <div class="w-full md:px-5 md:w-1/2">
+                {{ partial:components/heading :label="theme:page_title" size="h2" color="blue" }}
+
+                {{ if theme:page_desc }}
+                    <div class="mt-4 prose prose-p:text-bluegray">
+                        {{ theme:page_desc }}
+                    </div>
+                {{ /if }}
+
+
+                <div class="mt-4">
+                    {{ partial:components/button label="Go Back" link="/" size="sm" color="brand" }}
+                </div>
+            </div>
+            <div class="relative z-50 order-first w-full mb-12 md:order-none md:px-5 md:w-1/2 md:mb-0">
+                {{ svg src="404" class="text-purple-500 fill-current" }}
+            </div>
+        </div>
+    </div>
+</div>

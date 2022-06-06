@@ -1,0 +1,21 @@
+<div class="bg-purple-500">
+    <div class="container py-24 md:py-20">
+        <div class="grid md:grid-cols-2">
+            <div class="flex flex-col">
+                {{ partial:components.heading :label="title" size="h1" color="white" class="text-center md:text-left" }}
+
+                {{ if description }}
+                    <p class="mt-4 font-semibold text-center lg:text-lg text-gray-50 md:text-left lg:mt-2">
+                        {{ description }}
+                    </p>
+                {{ /if }}
+
+                {{ partial:partials/newsletter_form class="mt-8" }}
+            </div>
+
+            <div class="max-w-sm mx-auto mt-16 md:ml-10 md:mt-0">
+                {{ svg src="newsletter" class="object-cover w-full h-auto" }}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,6 +1,6 @@
 title: Theme
 data:
-  sitename: "Cloud"
+  sitename: Cloud
   logo: logo.svg
   favicon: favicons/favicon.ico
   favicon_256: favicons/android-chrome-256x256.png
@@ -8,9 +8,17 @@ data:
   favicon_180: favicons/apple-touch-icon.png
   favicon_32: favicons/favicon-32x32.png
   favicon_16: favicons/favicon-16x16.png
+  page_title: 'Page not found'
+  page_desc:
+    -
+      type: paragraph
+      content:
+        -
+          type: text
+          text: 'You may have mistyped the address or the page may have moved.'
   show_logo: true
-  footer_copyright: "© Cloud 2021. All rights reserved."
-  footer_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas leo, volutpat fusce vitae. Cras habitasse magna ultrices eget at."
+  footer_copyright: '© Cloud 2021. All rights reserved.'
+  footer_description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas leo, volutpat fusce vitae. Cras habitasse magna ultrices eget at.'
   sitemap_collections:
     - posts
     - pages

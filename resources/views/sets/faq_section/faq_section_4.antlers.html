@@ -1,0 +1,28 @@
+<div class="container py-20">
+    {{ partial:components/heading :label="title" size="h1" color="blue" class="mb-12 text-center" }}
+
+    <div class="flex flex-col justify-center max-w-6xl mx-auto divide-y-2">
+        {{ items }}
+            <div x-data="{ isOpen: false }" class="flex flex-col w-full py-6 space-y-6">
+                <div class="px-6" :class="{'bg-gray-100 rounded-3xl py-4' : isOpen, 'py-2': !isOpen }">
+                    <button class="flex items-center justify-between w-full" @click.prevent="isOpen = true">
+                        <span class="text-2xl font-semibold text-left text-indigo-900">
+                            {{ title }}
+                        </span>
+                        <span x-show="!isOpen">
+                            {{ svg src="plus" class="w-6 h-6 text-purple-500 fill-current" }}
+                        </span>
+                        <span x-show="isOpen">
+                            {{ svg src="minus" class="w-6 h-6 text-purple-500 fill-current" }}
+                        </span>
+                    </button>
+
+                    <div x-show="isOpen" @click.away="isOpen = false" x-collapse
+                        class="mt-3 prose prose-lg prose-p:text-indigo-600">
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
+        {{ /items }}
+    </div>
+</div>

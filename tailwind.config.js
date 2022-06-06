@@ -75,6 +75,7 @@ module.exports = {
             boxShadow: {
                 xs: "0px 5px 5px rgba(75, 93, 104, 0.1)",
                 "3xl": "10px 40px 50px rgba(229, 233, 246, 0.4)",
+                "4xl": "0px 0px 0px 2px #D4D4D8",
             },
         },
     },
@@ -84,8 +85,5 @@ module.exports = {
 
         // eslint-disable-next-line no-undef
         require("tailwindcss-debug-screens"),
-
-        // Flex Gap plugin
-        require("./flexgap"),
     ],
 };

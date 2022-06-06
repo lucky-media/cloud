@@ -1,0 +1,17 @@
+<div class="py-24 bg-purple-500">
+    <div class="container">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4">
+            {{ stats }}
+                <div class="flex flex-col px-4 py-6">
+                    <h4 class="mb-2 text-3xl font-bold text-white">
+                        {{ number }}
+                    </h4>
+
+                    {{ if description }}
+                        {{ partial:components/lead :label="description" size="lg" color="white" }}
+                    {{ /if }}
+                </div>
+            {{ /stats }}
+        </div>
+    </div>
+</div>

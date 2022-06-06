@@ -1,13 +1,13 @@
 <div class="relative overflow-hidden">
     <div class="container py-20">
         {{ if title }}
-            {{ partial:components.heading label=title size="h1" color="blue" line="true" center="true" }}
+            {{ partial:components.heading :label="title" size="h1" color="blue" line="true" center="true" }}
         {{ /if }}
         <div class="flex flex-wrap py-10">
             <div class="w-full md:w-6/12 md:ml-10">
                 {{ if description }}
                     <div class="max-w-md mx-auto mt-4 md:mx-0 md:mr-auto">
-                        {{ partial:components.lead label=description size="xl" color="bluegray" class="text-center md:text-left" }}
+                        {{ partial:components.lead :label="description" size="xl" color="bluegray" class="text-center md:text-left" }}
                     </div>
                 {{ /if }}
 
@@ -15,14 +15,13 @@
                     <ul class="mt-12 space-y-10">
                         {{ details }}
                             <li class="flex items-center px-4 py-6 bg-white lg:max-w-sm rounded-xl shadow-3xl">
-                                {{ svg src="{{ icon }}" class="w-16 h-16 text-pink-500 fill-current"
-                                }}
+                                {{ svg :src="icon" class="w-16 h-16 text-pink-500 fill-current" }}
                                 <div class="ml-4">
                                     {{ if title }}
-                                        {{ partial:components.heading label=title size="h6" color="blue" }}
+                                        {{ partial:components.heading :label="title" size="h6" color="blue" }}
                                     {{ /if }}
                                     {{ if description }}
-                                        {{ partial:components.lead label=description size="base" color="bluegray" class="mt-2" }}
+                                        {{ partial:components.lead :label="description" size="base" color="bluegray" class="mt-2" }}
                                     {{ /if }}
                                 </div>
                             </li>

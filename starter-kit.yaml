@@ -30,6 +30,7 @@ export_paths:
   - package.json
   - tailwind.config.js
   - webpack.mix.js
-  - flexgap.js
+  - CHANGELOG.md
+  - README.md
 dependencies:
   cnj/seotamic: ^2.0

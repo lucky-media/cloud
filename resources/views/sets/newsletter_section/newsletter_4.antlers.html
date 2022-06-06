@@ -1,0 +1,18 @@
+<div class="container py-24 md:py-28">
+    <div class="max-w-5xl mx-auto">
+        <div class="px-4 py-10 text-center bg-purple-500 md:px-8 rounded-3xl">
+            {{ partial:components.heading :label="title" size="h2" color="white" }}
+
+            {{ if description }}
+                <p class="mt-6 font-semibold lg:text-lg text-gray-50">
+                    {{ description }}
+                </p>
+            {{ /if }}
+
+
+            <div class="max-w-2xl mx-auto mt-16 md:mt-8">
+                {{ partial:partials/newsletter_form }}
+            </div>
+        </div>
+    </div>
+</div>

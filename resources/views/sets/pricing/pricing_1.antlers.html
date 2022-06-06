@@ -1,15 +1,15 @@
 <div class="container py-20 md:py-24">
-    <div class="flex flex-col items-center text-center justify-center mb-6">
+    <div class="flex flex-col items-center justify-center mb-6 text-center">
         {{ if title }}
-            {{ partial:components.heading label=title size="h3" color="blue" class="mb-4" }}
+            {{ partial:components.heading :label="title" size="h3" color="blue" class="mb-4" }}
         {{ /if }}
 
         {{ if description }}
-            {{ partial:components.lead label=description size="base" color="bluegray" }}
+            {{ partial:components.lead :label="description" size="base" color="bluegray" }}
         {{ /if }}
     </div>
 
-    <div class="grid pt-10 flex-gap-10 md:flex-gap-5 md:grid-cols-2 xl:grid-cols-3">
+    <div class="grid gap-10 mt-10 md:gap-5 md:grid-cols-2 xl:grid-cols-3">
         {{ prices }}
             <div
                 class="relative flex flex-col bg-white shadow-lg rounded-2xl hover:shadow-xl transition-shadow duration-300 ease-in-out {{ featured ? 'bg-gray-100 border-2 border-purple-500' : 'bg-white border' }}">
@@ -53,7 +53,7 @@
 
                 {{ if toggle and label }}
                     <div class="px-5 py-8">
-                        {{ partial:components.button size=button_size color=variant }}
+                        {{ partial:components.button size="{button_size}" color="{variant}" }}
                     </div>
                 {{ /if }}
             </div>

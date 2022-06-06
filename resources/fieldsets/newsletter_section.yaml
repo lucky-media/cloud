@@ -1,0 +1,40 @@
+title: 'Newsletter Section'
+fields:
+  -
+    handle: version
+    field:
+      options:
+        newsletter_1: 'Variant 1'
+        newsletter_2: 'Variant 2'
+        newsletter_3: 'Variant 3'
+        newsletter_4: 'Variant 4'
+      display: Variant
+      type: button_group
+      icon: button_group
+      listable: hidden
+      validate:
+        - required
+      default: newsletter_1
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      read_only: false
+      validate:
+        - required
+  -
+    handle: description
+    field:
+      antlers: false
+      display: Description
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+      read_only: false

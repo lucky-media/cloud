@@ -2,22 +2,22 @@
     <div class="flex flex-wrap">
         <div class="max-w-xl py-12 mr-auto">
             {{ if title }}
-                {{ partial:components.heading label=title size="h1" color="blue" }}
+                {{ partial:components.heading :label="title" size="h1" color="blue" }}
             {{ /if }}
 
             {{ if description }}
-                {{ partial:components.lead label=description size="lg" color="bluegray" class="mt-4" }}
+                {{ partial:components.lead :label="description" size="lg" color="bluegray" class="mt-4" }}
             {{ /if }}
 
             {{ if toggle and label }}
                 <div class="flex justify-center mt-8 md:justify-start">
-                    {{ partial:components.button size=button_size color=variant }}
+                    {{ partial:components.button size="{button_size}" color="{variant}" }}
                 </div>
             {{ /if }}
 
         </div>
         <div class="max-w-md mx-auto">
-            {{ partial:components/picture :image="image" cover="true" sizes="(min-width: 768px) 35vw, 80vw" }}
+            {{ partial:components/picture cover="true" }}
         </div>
     </div>
 </div>

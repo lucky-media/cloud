@@ -1,12 +1,12 @@
 <div class="container py-20">
     {{ if title }}
-        {{ partial:components.heading label=title size="h1" color="blue" class="text-center" line="true" center="true" }}
+        {{ partial:components.heading :label="title" size="h1" color="blue" line="true" center="true" }}
     {{ /if }}
 
     <div class="flex flex-wrap py-20">
         <div class="mb-10 md:w-7/12 md:mb-0">
             <div class="max-w-3xl mx-auto">
-                {{ partial:components/picture :image="image" cover="true" sizes="(min-width: 768px) 35vw, 80vw" }}
+                {{ partial:components/picture cover="true" }}
             </div>
         </div>
         <div class="w-full md:w-5/12">

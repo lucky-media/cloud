@@ -4,7 +4,7 @@ blueprint: pages
 title: Home
 template: home
 updated_by: 369c0269-580d-4c49-af9f-0450df6fea35
-updated_at: 1630926936
+updated_at: 1649692833
 seotamic_title: title
 seotamic_title_prepend: true
 seotamic_title_append: true

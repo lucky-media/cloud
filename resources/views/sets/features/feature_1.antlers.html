@@ -2,28 +2,27 @@
     <div class="container py-24">
         <div class="flex flex-col">
             {{ if title }}
-                {{ partial:components.heading label=title size="h3" color="blue" class="text-center" line="true" center="true" }}
+                {{ partial:components.heading :label="title" size="h3" color="blue" line="true" center="true" }}
             {{ /if }}
 
             {{ if description }}
-                {{ partial:components.lead label=description size="xl" color="bluegray" class="mt-4 mb-10 text-center"  }}
+                {{ partial:components.lead :label="description" size="xl" color="bluegray" class="mt-4 mb-10 text-center" }}
             {{ /if }}
 
-            <div class="grid flex-gap-5 md:grid-cols-3 lg:flex-gap-10">
+            <div class="grid gap-5 md:grid-cols-3 lg:gap-10">
                 {{ items }}
                     <div class="p-5 bg-white lg:p-10 rounded-2xl shadow-3xl">
                         {{ if icon }}
-                            {{ svg src="{{ icon }}" class="w-20 h-20 mb-8 text-pink-500 fill-current md:mb-20"
-                            }}
+                            {{ svg :src="icon" class="w-20 h-20 mb-8 text-pink-500 fill-current md:mb-20" }}
                         {{ /if }}
 
                         {{ if title }}
-                            {{ partial:components.heading label=title size="h5" color="blue" }}
+                            {{ partial:components.heading :label="title" size="h5" color="blue" }}
                         {{ /if }}
 
                         {{ if description }}
                             <div class="max-w-xs mt-4">
-                                {{ partial:components.lead label=description size="base" color="bluegray" }}
+                                {{ partial:components.lead :label="description" size="base" color="bluegray" }}
                             </div>
                         {{ /if }}
                     </div>
@@ -33,7 +32,7 @@
 
         <div style="z-index:-1"
             class="absolute top-56 xl:bottom-0 -left-28 xl:w-[900px] md:w-[650px] md:h-[680px] xl:h-[900px] w-[500px] h-[500px]">
-            {{ svg src="random-shape-2" class="text-purple-300 fill-current"  }}
+            {{ svg src="random-shape-2" class="text-purple-300 fill-current" }}
         </div>
 
     </div>

@@ -2,12 +2,12 @@
 Cloud is the Statamic Starter Kit that you need. It's perfect for creating a personal website, a SaaS or even a blog. You can build your website on the fly in just a few minutes. Add your logo, choose your preferred design components and write some content. That's it, as simple as that.
 
 ## Why Cloud?
-We have tried to make it **entirely dynamic** so that you don't have to make any changes to the code. Your website can be built and modified entirely from the **control panel**, but you are also free to make further modifications. We have included more than **30 component designs** that can be combined to deliver a **professional looking website**. We have thoroughly **tested** all the components and other design elements to make sure that they adapt to the **different screen sizes**. Plus, if you do change the primary colors then you can make even more combinations and your websites will look amazing.
+We have tried to make it **entirely dynamic** so that you don't have to make any changes to the code. Your website can be built and modified entirely from the **control panel**, but you are also free to make further modifications. We have included more than **48 component designs** that can be combined to deliver a **professional looking website**. We have thoroughly **tested** all the components and other design elements to make sure that they adapt to the **different screen sizes**. Plus, if you do change the primary colors then you can make even more combinations and your websites will look amazing.
 
 https://user-images.githubusercontent.com/7405502/132662945-0fac4092-5932-40b0-b6cb-2b24f523ef5e.mp4
 
 ## Features of Cloud
-* More than **30 component designs**
+* More than **48 component designs**
 * Easy customizable with Tailwind
 * Component driven approach, ready-made antlers components for Buttons, Headings, etc.
 * Working page builder to build the entire website from CP.
@@ -22,7 +22,6 @@ https://user-images.githubusercontent.com/7405502/132662945-0fac4092-5932-40b0-b
 * Single or Multiple Authors
 * Breakpoint debugger plugin for Tailwind
 * Tailwind Typography and Forms
-* Custom flex-gap property used for `gap` to support all browsers.
 * Alpine.js used for interactions
 
 ## Installation
@@ -41,7 +40,7 @@ If you have [Statamic’s CLI Tool installed](https://github.com/statamic/cli), 
 We have made sure that **Cloud** is ready made with everything you need. Simply access the control panel and make the changes you need. We will make sure that Cloud runs smoothly with future Statamic updates.
 
 ### Content
-After installing **Cloud**, you will see that we have preconfigured some pages and posts, just so it doesn't feel empty for you. But, you can easily delete or modify everything that we did. The Starter Kit has the following collections: Pages and Posts.
+After installing **Cloud**, you will see that we have pre-configured some pages and posts, just so it doesn't feel empty for you. But, you can easily delete or modify everything that we did. The Starter Kit has the following collections: Pages and Posts.
 
 Apart from these, you have many ready made components that can be used for creating your website. Each component has about **2-5 different variants** of design that you can choose from. We have designed the following components:
 
@@ -54,6 +53,11 @@ Apart from these, you have many ready made components that can be used for creat
 * Testimonials (4 sets)
 * Blog Section (3 sets)
 * Contact Form (3 sets) 
+* Newsletter Section ( 4 sets )
+* Stats Section ( 4 sets )
+* FAQ Section ( 4 sets )
+* Page Headers ( 3 variants )
+* 404 Page customizable from Globals
 * Single Post View
 * Standard Text
 

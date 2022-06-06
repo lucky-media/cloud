@@ -1,0 +1,77 @@
+title: 'Testimonial Section'
+fields:
+  -
+    handle: version
+    field:
+      options:
+        testimonials_1: 'Variant 1'
+        testimonials_2: 'Variant 2'
+        testimonials_3: 'Variant 3'
+        testimonials_4: 'Variant 4'
+      display: Variant
+      type: button_group
+      icon: button_group
+      listable: hidden
+      default: testimonials_1
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      listable: hidden
+  -
+    handle: testimonial
+    field:
+      collapse: false
+      sets:
+        new_set:
+          display: 'New Set'
+          fields:
+            -
+              handle: image
+              field:
+                mode: grid
+                container: assets
+                restrict: false
+                allow_uploads: true
+                max_files: 1
+                display: Image
+                type: assets
+                icon: assets
+                listable: hidden
+                validate:
+                  - required
+            -
+              handle: name
+              field:
+                input_type: text
+                antlers: false
+                display: Name
+                type: text
+                icon: text
+                listable: hidden
+            -
+              handle: position
+              field:
+                input_type: text
+                antlers: false
+                display: Position
+                type: text
+                icon: text
+                listable: hidden
+            -
+              handle: description
+              field:
+                antlers: false
+                display: Description
+                type: textarea
+                icon: textarea
+                listable: hidden
+      display: Testimonial
+      type: replicator
+      icon: replicator
+      listable: hidden
+      instructions: 'Design is optimized for a maximum of 2 sets. You can freely add more if needed.'

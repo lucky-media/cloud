@@ -3,7 +3,7 @@
     @keydown.escape="isOpen = false" @click.away="isOpen = false">
     <!--Logo etc-->
     <a aria-label="logo" href=" /">
-        {{ partial:components/picture :image="theme:logo" class="mb-6 max-h-12" alt="logo" cover="true" sizes="(min-width: 200px) 35vw, 90vw" }}
+        {{ partial:components/picture :image="theme:logo" class="mb-6 max-h-12" alt="logo" cover="true" }}
     </a>
 
     <!--Toggle button (hidden on large screens)-->
@@ -25,13 +25,12 @@
             {{ nav:navigation include_home="true" }}
                 {{ if toggle and label }}
                     <li>
-                        {{ partial:components.button size=button_size color=variant }}
+                        {{ partial:components.button size="{button_size}" color="{variant}" }}
                     </li>
                 {{ else }}
                     <li>
-                        <a class="text-xl lg:text-lg text-indigo-900 hover:text-purple-500 {{ if is_current or is_parent }}  text-indigo-900 font-bold {{ /if }}"
-                            href="
-                        {{ url }}" @click="isOpen = false">
+                        <a class="text-xl lg:text-lg text-indigo-900 hover:text-purple-500 {{ (is_current or is_parent) ?= 'text-indigo-900 font-bold ' }}"
+                            href="{{ url }}" @click="isOpen = false">
                             {{ title }}
                         </a>
                     </li>

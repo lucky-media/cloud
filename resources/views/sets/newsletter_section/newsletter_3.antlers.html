@@ -1,0 +1,20 @@
+<div class="container py-24">
+    <div class="flex flex-wrap items-center justify-center md:-mx-5">
+        <div class="max-w-md mb-4 md:px-5 xl:mb-0">
+            {{ svg src="newsletter" class="object-cover w-full h-auto" }}
+        </div>
+        <div class="w-full lg:max-w-2xl md:px-5">
+            <div class="flex flex-col px-4 py-10 bg-purple-500 md:px-8 rounded-3xl">
+                {{ partial:components.heading :label="title" size="h2" color="white" class="text-center md:text-left" }}
+
+                {{ if description }}
+                    <p class="mt-4 font-semibold text-center lg:text-lg text-gray-50 md:text-left lg:mt-2">
+                        {{ description }}
+                    </p>
+                {{ /if }}
+
+                {{ partial:partials/newsletter_form class="mt-16 md:mt-8 lg:mt-16" }}
+            </div>
+        </div>
+    </div>
+</div>

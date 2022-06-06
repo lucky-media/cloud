@@ -1,0 +1,38 @@
+<div class="relative overflow-hidden">
+    <div
+        class="absolute -z-10 w-auto h-[800px] md:h-[1000px] xl:h-[1200px] md:right-[60%] xl:right-[50%] xl:left-[-12%] md:top-[-50%] top-[10%] right-[20%]">
+        {{ svg src="bg-stats" class="text-purple-500 fill-current" }}
+    </div>
+
+    <div class="container py-12">
+        <div class="flex flex-col items-center text-center">
+            {{ partial:components/heading :label="title" size="h1" color="blue" class="mb-4" }}
+
+            {{ if description }}
+                {{ partial:components/lead label="{description}" size="xl" color="bluegray" class="prose md:prose-lg lg:prose-xl" }}
+            {{ /if }}
+        </div>
+
+        <div
+            class="grid mt-12 bg-white border-2 divide-y-2 md:auto-cols-fr md:divide-y-0 md:divide-x-2 md:grid-flow-col rounded-3xl">
+            {{ stats }}
+                <div class="flex flex-col px-4 py-6">
+                    {{ if has_icon }}
+                        <div class="w-12 h-12">
+                            {{ partial:components/picture :image="icon" cover="true" }}
+                        </div>
+                    {{ /if }}
+
+                    <h4 class="mt-4 mb-2 text-2xl font-bold text-indigo-900">
+                        {{ number }}
+                    </h4>
+
+                    {{ if description }}
+                        {{ partial:components/lead :label="description" size="lg" color="indigo" }}
+                    {{ /if }}
+                </div>
+            {{ /stats }}
+        </div>
+
+    </div>
+</div>

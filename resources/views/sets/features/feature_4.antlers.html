@@ -1,30 +1,30 @@
 <div class="container py-16 md:py-24">
     {{ if title }}
-        {{ partial:components.heading label=title size="h3" color="blue" center="true" }}
+        {{ partial:components.heading :label="title" size="h3" color="blue" center="true" }}
     {{ /if }}
 
     {{ if description }}
         <div class="mx-auto mt-3 md:max-w-sm">
-            {{ partial:components.lead label=description size="base" color="bluegray" class="text-center"  }}
+            {{ partial:components.lead :label="description" size="base" color="bluegray" class="text-center" }}
         </div>
     {{ /if }}
 
-    <div class="grid pt-12 flex-gap-10 md:grid-cols-2 lg:grid-cols-3">
+    <div class="grid gap-10 mt-12 md:grid-cols-2 lg:grid-cols-3">
         {{ items }}
             <div class="flex items-start">
                 {{ if icon }}
                     <div class="flex items-center justify-center w-16 h-16 mr-6 shadow-xs shrink-0 rounded-xl">
-                        {{ svg src="{{ icon }}" class="w-10 h-10 text-pink-500 fill-current" }}
+                        {{ svg :src="icon" class="w-10 h-10 text-pink-500 fill-current" }}
                     </div>
                 {{ /if }}
                 <div>
                     {{ if title }}
-                        {{ partial:components.heading label=title size="h5" color="blue" }}
+                        {{ partial:components.heading :label="title" size="h5" color="blue" }}
                     {{ /if }}
 
                     {{ if description }}
                         <div class="mt-2 md:max-w-[260px]">
-                            {{ partial:components.lead label=description size="base" color="bluegray" }}
+                            {{ partial:components.lead :label="description" size="base" color="bluegray" }}
                         </div>
                     {{ /if }}
                 </div>

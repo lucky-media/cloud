@@ -1,25 +1,25 @@
 <div class="py-10 overflow-hidden bg-pink-100 md:py-20">
     <div class="container">
-        <div class="grid md:grid-cols-2 flex-gap-10">
+        <div class="grid gap-10 md:grid-cols-2">
             {{ testimonial }}
                 <div class="p-5 bg-white shadow-xs rounded-2xl">
                     <div class="flex items-center">
                         {{ if image }}
                             <div class="w-20 h-20 overflow-hidden rounded-xl">
-                                {{ partial:components/picture :image="image" cover="true" sizes="(min-width: 120px) 35vw, 80vw" }}
+                                {{ partial:components/picture cover="true" }}
                             </div>
                         {{ /if }}
                         <div class="ml-6">
                             {{ if name }}
-                                {{ partial:components.heading label=name size="h5" color="blue" }}
+                                {{ partial:components.heading :label="name" size="h5" color="blue" }}
                             {{ /if }}
                             {{ if position }}
-                                {{ partial:components.lead label=position size="base" color="bluegray" class="mt-2" }}
+                                {{ partial:components.lead :label="position" size="base" color="bluegray" class="mt-2" }}
                             {{ /if }}
                         </div>
                     </div>
                     {{ if description }}
-                        {{ partial:components.lead label=description size="lg" color="bluegray" class="mt-4" }}
+                        {{ partial:components.lead :label="description" size="lg" color="bluegray" class="mt-4" }}
                     {{ /if }}
                 </div>
             {{ /testimonial }}

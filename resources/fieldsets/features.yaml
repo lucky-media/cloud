@@ -1,0 +1,86 @@
+title: 'Feature Section'
+fields:
+  -
+    handle: version
+    field:
+      options:
+        feature_1: 'Variant 1'
+        feature_2: 'Variant 2'
+        feature_3: 'Variant 3'
+        feature_4: 'Variant 4'
+      display: Variant
+      type: button_group
+      icon: button_group
+      listable: hidden
+      validate:
+        - required
+      default: feature_1
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      listable: hidden
+      validate:
+        - required
+  -
+    handle: description
+    field:
+      antlers: false
+      display: Description
+      type: textarea
+      icon: textarea
+      listable: hidden
+  -
+    handle: items
+    field:
+      collapse: false
+      sets:
+        new_set:
+          display: 'New set'
+          fields:
+            -
+              handle: icon
+              field:
+                options:
+                  plug: Plug
+                  github: Github
+                  site: Site
+                  data: Data
+                  rollback: Rollback
+                  pie_chart: 'Pie Chart'
+                multiple: false
+                clearable: false
+                searchable: true
+                taggable: false
+                push_tags: false
+                cast_booleans: false
+                display: Icon
+                type: select
+                icon: select
+                listable: hidden
+                max_items: 1
+            -
+              handle: title
+              field:
+                input_type: text
+                antlers: false
+                display: Title
+                type: text
+                icon: text
+                listable: hidden
+            -
+              handle: description
+              field:
+                antlers: false
+                display: Description
+                type: textarea
+                icon: textarea
+                listable: hidden
+      display: Items
+      type: replicator
+      icon: replicator
+      listable: hidden

@@ -2,14 +2,14 @@
     <div class="max-w-3xl py-16 mx-auto text-center md:py-24">
         {{ if title }}
             <div class="mb-12">
-                {{ partial:components.heading label=title size="h1" color="blue" }}
+                {{ partial:components.heading :label="title" size="h1" color="blue" }}
             </div>
         {{ /if }}
 
         <div class="flex justify-center">
-            <div class="grid grid-cols-2 flex-gap-12 md:grid-cols-8">
+            <div class="grid grid-cols-2 gap-12 md:grid-cols-8">
                 {{ images }}
-                    {{ partial:components/picture :image="url" cover="true" class="mx-auto max-h-14" sizes="(min-width: 64px) 35vw, 60vw" }}
+                    {{ partial:components/picture :image="url" cover="true" class="mx-auto max-h-14" }}
                 {{ /images }}
             </div>
         </div>

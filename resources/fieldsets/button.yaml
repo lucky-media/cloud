@@ -8,6 +8,8 @@ fields:
       type: toggle
       icon: toggle
       instructions: 'Display Button'
+      instructions_position: above
+      read_only: false
       listable: hidden
   -
     handle: label

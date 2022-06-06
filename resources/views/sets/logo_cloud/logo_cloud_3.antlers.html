@@ -2,13 +2,13 @@
     <div class="flex flex-wrap items-center justify-around">
         {{ if title }}
             <div class="max-w-lg mb-12 text-center lg:mr-auto lg:text-left lg:mb-0">
-                {{ partial:components.heading label=title size="h1" color="blue"  }}
+                {{ partial:components.heading :label="title" size="h1" color="blue" }}
             </div>
         {{ /if }}
         <div class="max-w-md mx-auto md:ml-auto">
-            <div class="grid grid-cols-2 flex-gap-10 md:grid-cols-4">
+            <div class="grid grid-cols-2 gap-10 md:grid-cols-4">
                 {{ images }}
-                    {{ partial:components/picture :image="url" cover="true" class="mx-auto max-h-14" sizes="(min-width: 64px) 35vw, 60vw" }}
+                    {{ partial:components/picture :image="url" cover="true" class="mx-auto max-h-14" }}
                 {{ /images }}
             </div>
         </div>

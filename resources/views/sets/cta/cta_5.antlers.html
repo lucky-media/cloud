@@ -3,11 +3,11 @@
         <div class="flex flex-wrap">
             <div class="md:w-5/12">
                 {{ if title }}
-                    {{ partial:components.heading label=title size="h1" color="blue" }}
+                    {{ partial:components.heading :label="title" size="h1" color="blue" }}
                 {{ /if }}
 
                 {{ if description }}
-                    {{ partial:components.lead label=description size="lg" color="bluegray" class="mt-4" }}
+                    {{ partial:components.lead :label="description" size="lg" color="bluegray" class="mt-4" }}
                 {{ /if }}
 
                 {{ if toggle and label }}
@@ -15,7 +15,7 @@
                 {{ /if }}
             </div>
             <div class="max-w-2xl mx-auto mt-16 ml-4 xl:ml-auto xl:mt-0">
-                {{ partial:components/picture :image="image" cover="true" sizes="(min-width: 768px) 35vw, 80vw" }}
+                {{ partial:components/picture cover="true" }}
             </div>
         </div>
     </div>

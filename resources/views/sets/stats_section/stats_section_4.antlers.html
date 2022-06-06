@@ -1,0 +1,25 @@
+<div class="container py-28">
+    <div class="flex flex-wrap items-center justify-center">
+        <div class="mb-12 lg:w-2/5 lg:pr-8 lg:mb-0">
+            {{ partial:components.heading :label="title" size="h2" color="blue" class="mb-4 text-center lg:text-left" }}
+
+            {{ if description }}
+                {{ partial:components/lead :label="description" size="lg" color="indigo" class="max-w-xl text-center lg:text-left" }}
+            {{ /if }}
+        </div>
+
+        <div class="w-full lg:w-3/5">
+            <div class="grid overflow-hidden bg-gray-300 border-2 border-gray-300 rounded-lg md:grid-cols-2">
+                {{ stats }}
+                    <div class="px-4 py-6 text-center bg-white border-2 rounded-md">
+                        {{ partial:components/heading :label="number" size="h1" color="blue" class="mb-2" }}
+
+                        {{ if description }}
+                            {{ partial:components/lead :label="description" size="lg" color="indigo" class="" }}
+                        {{ /if }}
+                    </div>
+                {{ /stats }}
+            </div>
+        </div>
+    </div>
+</div>
