@@ -1,7 +1,7 @@
 
 # Changelog
 
-## v2.0 (date)
+## v2.0 2022-06-06
 This is our biggest update of Cloud since its release and we will cover here every change made. Please note that due to the nature of the starter kits it was impossible to do incremental updates so bear with us on this one.
 
 ### What's improved
