@@ -1,5 +1,3 @@
-const config = require("tailwindcss/defaultTheme");
-
 module.exports = {
     content: [
         "./resources/**/*.antlers.html",

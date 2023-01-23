@@ -1,7 +1,7 @@
 <div class="relative py-16 overflow-hidden md:py-32">
     <div class="container">
         {{ if title }}
-            {{ partial:components.heading label=title size="h1" color="blue" center="true" }}
+            {{ partial:components.heading :label="title" size="h1" color="blue" center="true" }}
         {{ /if }}
         <div class="grid gap-4 mt-12 md:grid-cols-2 xl:grid-cols-3">
             {{ collection from="posts" limit="6" paginate="true" as="posts" }}
@@ -24,15 +24,15 @@
                                 {{ /if }}
 
                                 <a href="{{ url }}">
-                                    {{ partial:components.heading label=title size="h4" color="blue" class="hover:underline" }}
+                                    {{ partial:components.heading :label="title" size="h4" color="blue" class="hover:underline" }}
                                 </a>
 
                                 {{ if excerpt }}
-                                    {{ partial:components.lead label=excerpt size="base" color="bluegray" class="mt-5" }}
+                                    {{ partial:components.lead :label="excerpt" size="base" color="bluegray" class="mt-5" }}
                                 {{ /if }}
                             </div>
 
-                            {{ partial:components.arrow_link link=url label="Read More" }}
+                            {{ partial:components.arrow_link :link="url" label="Read More" }}
                         </div>
                     </div>
                 {{ /posts }}
