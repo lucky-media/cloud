@@ -19,7 +19,7 @@ icons:
         class="{{ view }} {{ classes }} {{ sizes[size] }} {{ types[color] }} {{ /view }} {{ class }}">
 
         {{ if icon and color !== 'white' }}
-            {{ svg src="{{ icon }}" class="w-6 h-6 mr-3 fill-current {{ view }} {{ icons[color] }} {{ /view }}" }}
+            {{ svg src="{{ icon }}" class="w-6 h-6 mr-3 fill-current { view:icons[color] }" }}
         {{ /if }}
 
         {{ label }}
@@ -33,13 +33,16 @@ icons:
         class="{{ view }} {{ classes }} {{ sizes[size] }} {{ types[color] }} {{ /view }} {{ class }}">
 
         {{ if icon and color !== 'white' }}
-            {{ svg src="{{ icon }}" class="w-6 h-6 mr-3 fill-current {{ view }} {{ icons[color] }} {{ /view }}" }}
+            {{ svg src="{{ icon }}" class="w-6 h-6 mr-3 fill-current { view:icons[color] }" }}
         {{ /if }}
 
         {{ label }}
 
         {{ if color === 'white' }}
-            {{ svg src="right-arrow" class="w-6 h-6 ml-5 text-purple-500 fill-current" }}
+            {{ svg src="right-arrow" class="w-6 h-6 ml-5 text-purple-500 group-hover:text-white fill-current" }}
         {{ /if }}
     </button>
 {{ /if }}
+
+
+

@@ -1,6 +1,16 @@
 
 # Changelog
 
+## v2.1 2022-01-23
+This release updates the frontend packages and ensures compatibility with the new Statamic Parser.
+
+### What's improved
+- Updated dependencies
+
+### What's new
+- Vite is now the default bundler.
+- Please remove the unnecessary files after installing `webpack.mix.js`, `cp.css`, `site.css` as they are not needed.
+
 ## v2.0 2022-06-06
 This is our biggest update of Cloud since its release and we will cover here every change made. Please note that due to the nature of the starter kits it was impossible to do incremental updates so bear with us on this one.
 

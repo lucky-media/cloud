@@ -10,19 +10,14 @@
 
     {{# Favicons #}}
     {{ partial:partials.favicons }}
-
     {{ seotamic }}
-
-    <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
-    <script src="{{ mix src='/js/site.js' }}" defer></script>
+    {{ vite src="resources/css/tailwind.css|resources/js/site.js" }}
 </head>
 
 <body
     class="flex flex-col justify-between min-h-screen font-sans antialiased {{ environment === 'local' ?= 'debug-screens' }}">
     {{ partial:layout/navigation }}
-
     {{ template_content }}
-
     {{ partial:layout/footer }}
 </body>
 

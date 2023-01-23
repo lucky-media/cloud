@@ -1,0 +1,111 @@
+{
+  "node_modules/@fontsource/mulish/files/mulish-vietnamese-700-normal.woff2": {
+    "file": "assets/mulish-vietnamese-700-normal-f79cd017.woff2",
+    "src": "node_modules/@fontsource/mulish/files/mulish-vietnamese-700-normal.woff2"
+  },
+  "node_modules/@fontsource/mulish/files/mulish-cyrillic-700-normal.woff2": {
+    "file": "assets/mulish-cyrillic-700-normal-16ec334c.woff2",
+    "src": "node_modules/@fontsource/mulish/files/mulish-cyrillic-700-normal.woff2"
+  },
+  "node_modules/@fontsource/mulish/files/mulish-latin-700-normal.woff2": {
+    "file": "assets/mulish-latin-700-normal-3aa91c51.woff2",
+    "src": "node_modules/@fontsource/mulish/files/mulish-latin-700-normal.woff2"
+  },
+  "node_modules/@fontsource/mulish/files/mulish-latin-ext-700-normal.woff2": {
+    "file": "assets/mulish-latin-ext-700-normal-81d06e9a.woff2",
+    "src": "node_modules/@fontsource/mulish/files/mulish-latin-ext-700-normal.woff2"
+  },
+  "node_modules/@fontsource/mulish/files/mulish-cyrillic-ext-300-normal.woff2": {
+    "file": "assets/mulish-cyrillic-ext-300-normal-fb45a838.woff2",
+    "src": "node_modules/@fontsource/mulish/files/mulish-cyrillic-ext-300-normal.woff2"
+  },
+  "node_modules/@fontsource/mulish/files/mulish-cyrillic-ext-700-normal.woff2": {
+    "file": "assets/mulish-cyrillic-ext-700-normal-32de3088.woff2",
+    "src": "node_modules/@fontsource/mulish/files/mulish-cyrillic-ext-700-normal.woff2"
+  },
+  "node_modules/@fontsource/mulish/files/mulish-cyrillic-300-normal.woff2": {
+    "file": "assets/mulish-cyrillic-300-normal-779f3713.woff2",
+    "src": "node_modules/@fontsource/mulish/files/mulish-cyrillic-300-normal.woff2"
+  },
+  "node_modules/@fontsource/mulish/files/mulish-latin-300-normal.woff2": {
+    "file": "assets/mulish-latin-300-normal-48a1c535.woff2",
+    "src": "node_modules/@fontsource/mulish/files/mulish-latin-300-normal.woff2"
+  },
+  "node_modules/@fontsource/mulish/files/mulish-latin-ext-300-normal.woff2": {
+    "file": "assets/mulish-latin-ext-300-normal-e3757d5c.woff2",
+    "src": "node_modules/@fontsource/mulish/files/mulish-latin-ext-300-normal.woff2"
+  },
+  "node_modules/@fontsource/mulish/files/mulish-cyrillic-400-normal.woff2": {
+    "file": "assets/mulish-cyrillic-400-normal-75e6e1cf.woff2",
+    "src": "node_modules/@fontsource/mulish/files/mulish-cyrillic-400-normal.woff2"
+  },
+  "node_modules/@fontsource/mulish/files/mulish-vietnamese-400-normal.woff2": {
+    "file": "assets/mulish-vietnamese-400-normal-93e092bf.woff2",
+    "src": "node_modules/@fontsource/mulish/files/mulish-vietnamese-400-normal.woff2"
+  },
+  "node_modules/@fontsource/mulish/files/mulish-vietnamese-300-normal.woff2": {
+    "file": "assets/mulish-vietnamese-300-normal-5c4b8625.woff2",
+    "src": "node_modules/@fontsource/mulish/files/mulish-vietnamese-300-normal.woff2"
+  },
+  "node_modules/@fontsource/mulish/files/mulish-cyrillic-ext-400-normal.woff2": {
+    "file": "assets/mulish-cyrillic-ext-400-normal-8e931018.woff2",
+    "src": "node_modules/@fontsource/mulish/files/mulish-cyrillic-ext-400-normal.woff2"
+  },
+  "node_modules/@fontsource/mulish/files/mulish-latin-ext-400-normal.woff2": {
+    "file": "assets/mulish-latin-ext-400-normal-fddf105a.woff2",
+    "src": "node_modules/@fontsource/mulish/files/mulish-latin-ext-400-normal.woff2"
+  },
+  "node_modules/@fontsource/mulish/files/mulish-latin-400-normal.woff2": {
+    "file": "assets/mulish-latin-400-normal-ad234f09.woff2",
+    "src": "node_modules/@fontsource/mulish/files/mulish-latin-400-normal.woff2"
+  },
+  "node_modules/@fontsource/mulish/files/mulish-all-700-normal.woff": {
+    "file": "assets/mulish-all-700-normal-e3e809c3.woff",
+    "src": "node_modules/@fontsource/mulish/files/mulish-all-700-normal.woff"
+  },
+  "node_modules/@fontsource/mulish/files/mulish-all-300-normal.woff": {
+    "file": "assets/mulish-all-300-normal-80e5ad66.woff",
+    "src": "node_modules/@fontsource/mulish/files/mulish-all-300-normal.woff"
+  },
+  "node_modules/@fontsource/mulish/files/mulish-all-400-normal.woff": {
+    "file": "assets/mulish-all-400-normal-c5d78505.woff",
+    "src": "node_modules/@fontsource/mulish/files/mulish-all-400-normal.woff"
+  },
+  "resources/js/site.css": {
+    "file": "assets/site-abc4d416.css",
+    "src": "resources/js/site.css"
+  },
+  "resources/css/tailwind.css": {
+    "file": "assets/tailwind-cb53d1be.css",
+    "src": "resources/css/tailwind.css",
+    "isEntry": true
+  },
+  "resources/js/site.js": {
+    "file": "assets/site-8963dbb3.js",
+    "src": "resources/js/site.js",
+    "isEntry": true,
+    "css": [
+      "assets/site-abc4d416.css"
+    ],
+    "assets": [
+      "assets/mulish-cyrillic-ext-300-normal-fb45a838.woff2",
+      "assets/mulish-all-300-normal-80e5ad66.woff",
+      "assets/mulish-cyrillic-300-normal-779f3713.woff2",
+      "assets/mulish-vietnamese-300-normal-5c4b8625.woff2",
+      "assets/mulish-latin-ext-300-normal-e3757d5c.woff2",
+      "assets/mulish-latin-300-normal-48a1c535.woff2",
+      "assets/mulish-cyrillic-ext-400-normal-8e931018.woff2",
+      "assets/mulish-all-400-normal-c5d78505.woff",
+      "assets/mulish-cyrillic-400-normal-75e6e1cf.woff2",
+      "assets/mulish-vietnamese-400-normal-93e092bf.woff2",
+      "assets/mulish-latin-ext-400-normal-fddf105a.woff2",
+      "assets/mulish-latin-400-normal-ad234f09.woff2",
+      "assets/mulish-cyrillic-ext-700-normal-32de3088.woff2",
+      "assets/mulish-all-700-normal-e3e809c3.woff",
+      "assets/mulish-cyrillic-700-normal-16ec334c.woff2",
+      "assets/mulish-vietnamese-700-normal-f79cd017.woff2",
+      "assets/mulish-latin-ext-700-normal-81d06e9a.woff2",
+      "assets/mulish-latin-700-normal-3aa91c51.woff2"
+    ]
+  }
+}
