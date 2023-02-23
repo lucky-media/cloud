@@ -144,6 +144,9 @@ By default we make use of Vite with [Laravel](https://laravel.com/docs/9.x/vite)
 * `npm run dev` - to run in development mode.
 * `npm run build` - to compile assets for production.
 
+## Commercial addon
+Cloud is a commercial starter kit - you **must purchase a license** via the [Statamic Marketplace](https://statamic.com/starter-kits/luckymedia/cloud) to use it in your project.
+
 ## 🐞 Bugs and 💡 Feature Requests
 Please refer to the issues tab to submit a Bug or a Feature Request.
 
