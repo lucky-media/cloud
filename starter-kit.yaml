@@ -32,5 +32,3 @@ export_paths:
   - postcss.config.js
   - CHANGELOG.md
   - README.md
-dependencies:
-  cnj/seotamic: ^2.0

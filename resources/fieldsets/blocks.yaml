@@ -5,74 +5,107 @@ fields:
     field:
       collapse: accordion
       sets:
-        hero:
-          display: 'Hero Section'
-          fields:
-            -
-              import: hero
-        newsletter_section:
-          display: 'Newsletter Section'
-          fields:
-            -
-              import: newsletter_section
-        stats_section:
-          display: 'Stats Section'
-          fields:
-            -
-              import: stats_section
-        faq_section:
-          display: 'Faq Section'
-          fields:
-            -
-              import: faq_section
-        cta:
-          display: 'Cta Section'
-          fields:
-            -
-              import: cta
-        logo_cloud:
-          display: 'Logo Cloud'
-          fields:
-            -
-              import: logo_cloud
-        features:
-          display: 'Feature Section'
-          fields:
-            -
-              import: features
-        testimonials:
-          display: 'Testimonial Section'
-          fields:
-            -
-              import: testimonials
-        pricing:
-          display: 'Pricing Section'
-          fields:
-            -
-              import: pricing
-        blog:
-          display: 'Blog Section'
-          fields:
-            -
-              import: blog
-        contact:
-          display: 'Contact Section'
-          fields:
-            -
-              import: contact
-        section_with_image:
-          display: 'Section With Image'
-          fields:
-            -
-              import: section_with_image
-        text_section:
-          display: 'Text Section'
-          fields:
-            -
-              import: text_section
+        main:
+          display: Main
+          instructions: null
+          icon: null
+          sets:
+            hero:
+              display: 'Hero Section'
+              instructions: null
+              icon: layout-split-verical
+              fields:
+                -
+                  import: hero
+            newsletter_section:
+              display: 'Newsletter Section'
+              instructions: null
+              icon: mail-sign-at
+              fields:
+                -
+                  import: newsletter_section
+            stats_section:
+              display: 'Stats Section'
+              instructions: null
+              icon: dashboard-layout
+              fields:
+                -
+                  import: stats_section
+            faq_section:
+              display: 'Faq Section'
+              instructions: null
+              icon: mail-inbox-content
+              fields:
+                -
+                  import: faq_section
+            cta:
+              display: 'Cta Section'
+              instructions: null
+              icon: form-text-field
+              fields:
+                -
+                  import: cta
+            logo_cloud:
+              display: 'Logo Cloud'
+              instructions: null
+              icon: layout-grid-dots
+              fields:
+                -
+                  import: logo_cloud
+            features:
+              display: 'Feature Section'
+              instructions: null
+              icon: layout-three-columns
+              fields:
+                -
+                  import: features
+            testimonials:
+              display: 'Testimonial Section'
+              instructions: null
+              icon: user-multiple
+              fields:
+                -
+                  import: testimonials
+            pricing:
+              display: 'Pricing Section'
+              instructions: null
+              icon: money-cashier-price-tag
+              fields:
+                -
+                  import: pricing
+            blog:
+              display: 'Blog Section'
+              instructions: null
+              icon: mail-chat-bubble-text
+              fields:
+                -
+                  import: blog
+            contact:
+              display: 'Contact Section'
+              instructions: null
+              icon: phone-contact-phonebook
+              fields:
+                -
+                  import: contact
+            section_with_image:
+              display: 'Section With Image'
+              instructions: null
+              icon: media-image-picture-gallery
+              fields:
+                -
+                  import: section_with_image
+            text_section:
+              display: 'Text Section'
+              instructions: null
+              icon: text-formatting-all-caps
+              fields:
+                -
+                  import: text_section
       display: Blocks
       type: replicator
       icon: replicator
       listable: hidden
       instructions_position: above
-      read_only: false
+      visibility: visible
+      previews: true
+      hide_display: false
