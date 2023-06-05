@@ -1,0 +1,13 @@
+title: SEO
+data:
+  sitename: 'Cloud Statamic Starter Kit'
+  prepend_on_title: 'Cloud Starter Kit'
+  meta_description: "Cloud is the Statamic Starter Kit that you need. It's perfect for creating a personal website, a Saas or even a blog. You can build your website on the fly in just a few minutes."
+  display_og_tags: true
+  og_description: "Cloud is the Statamic Starter Kit that you need. It's perfect for creating a personal website, a Saas or even a blog. You can build your website on the fly in just a few minutes."
+  display_twitter_tags: true
+  sitemap_collections:
+    - pages
+    - posts
+  sitemap_change_frequency: weekly
+  sitemap_priority: 0.5
