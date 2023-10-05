@@ -25,7 +25,7 @@ https://user-images.githubusercontent.com/7405502/132662945-0fac4092-5932-40b0-b
 * Alpine.js used for interactions
 
 ## Installation
-To install Cloud, follow the [Starter Kit installation instructions](https://statamic.dev/installing-a-starter-kit). Note that you will need to be running **Statamic 3.2+**.
+To install Cloud, follow the [Starter Kit installation instructions](https://statamic.dev/installing-a-starter-kit). Note that you will need to be running **Statamic 4.x**.
 
 ### Installing into an existing site
 
