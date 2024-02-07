@@ -3,8 +3,8 @@ id: home
 blueprint: pages
 title: Home
 template: home
-updated_by: 369c0269-580d-4c49-af9f-0450df6fea35
-updated_at: 1679334059
+updated_by: 6369e34e-954c-4e48-9798-5e5e36ea26e3
+updated_at: 1699868099
 seotamic_title: title
 seotamic_title_prepend: true
 seotamic_title_append: true
@@ -27,6 +27,7 @@ blocks:
     target_blank: false
     type: hero
     enabled: true
+    link: '#'
   -
     id: 4zWNA0Bk
     version: feature_1
@@ -90,6 +91,7 @@ blocks:
     target_blank: false
     type: section_with_image
     enabled: true
+    link: '#'
   -
     id: 3YD7BDpK
     version: testimonials_4
@@ -125,6 +127,7 @@ blocks:
     target_blank: false
     type: cta
     enabled: true
+    link: '#'
 page_header: false
 seo_title: title
 seo_meta_description: empty

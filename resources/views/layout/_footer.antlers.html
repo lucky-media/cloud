@@ -7,7 +7,6 @@
                         {{ partial:components/picture :image="theme:logo" alt="footer logo" class="mb-6 max-h-12" cover="true" }}
                     </a>
                 {{ /if }}
-
                 {{ partial:components.lead :label="theme:footer_description" size="xl" color="gray" }}
             </div>
             {{ nav:footer }}
@@ -15,7 +14,6 @@
                     <p class="mb-10 text-xl font-bold text-gray-700">
                         {{ title }}
                     </p>
-
                     {{ if children }}
                         <ul class="space-y-5 text-lg text-gray-700">
                             {{ children }}
@@ -33,7 +31,7 @@
     </div>
     <div class="pt-5 pb-16 mt-16 border-t border-gray-700">
         <div class="container">
-            {{ partial:components.lead :label="theme:footer_copyright" size="base" color="bluegray" }}
+            {{ partial:components.lead label="{theme:footer_copyright}" size="base" color="bluegray" }}
         </div>
     </div>
 </div>
