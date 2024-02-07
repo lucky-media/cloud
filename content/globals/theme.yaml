@@ -17,7 +17,7 @@ data:
           type: text
           text: 'You may have mistyped the address or the page may have moved.'
   show_logo: true
-  footer_copyright: '© Cloud 2021. All rights reserved.'
+  footer_copyright: '© Cloud {{ now format="Y" }}. All rights reserved.'
   footer_description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas leo, volutpat fusce vitae. Cras habitasse magna ultrices eget at.'
   sitemap_collections:
     - posts
