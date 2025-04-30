@@ -71,9 +71,9 @@
     "file": "assets/mulish-vietnamese-700-normal-DT0WVB6n.woff2",
     "src": "node_modules/@fontsource/mulish/files/mulish-vietnamese-700-normal.woff2"
   },
-  "resources/css/tailwind.css": {
-    "file": "assets/tailwind-BmVEH7J0.css",
-    "src": "resources/css/tailwind.css",
+  "resources/css/site.css": {
+    "file": "assets/site-BmVEH7J0.css",
+    "src": "resources/css/site.css",
     "isEntry": true
   },
   "resources/js/site.js": {

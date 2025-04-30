@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @source "../views";
+@source "../../content";
 @import "./plugins.css";
 
 @theme {
@@ -114,4 +115,8 @@
                 rgba(214, 177, 255, 0.5) -0.22%,
                 rgba(214, 177, 255, 0.15) 100.31%);
     }
+}
+
+html {
+    height: 100%;
 }
