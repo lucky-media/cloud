@@ -1,7 +1,7 @@
 <div class="container py-16 md:py-24">
     <div class="flex flex-wrap items-center justify-between">
         <div class="max-w-xl mx-auto lg:mr-auto lg:mx-0">
-            <div class="py-8 pl-6 pr-6 space-y-5 bg-purple-500 md:pl-14 md:pr-10 md:py-10 rounded-2xl">
+            <div class="py-8 pl-6 pr-6 flex flex-col gap-y-5 bg-purple-500 md:pl-14 md:pr-10 md:py-10 rounded-2xl">
                 {{ if title }}
                     {{ partial:components.heading :label="title" size="h3" color="white" }}
                 {{ /if }}
@@ -15,7 +15,7 @@
                         {{ partial:components.button size="{button_size}" color="{variant}" }}
                     </div>
                 {{ /if }}
-
+                
             </div>
         </div>
         <div class="max-w-md mx-auto mt-12 lg:mt-0">

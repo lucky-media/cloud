@@ -16,7 +16,8 @@
                     </a>
                     <div class="flex flex-col justify-between h-full p-6">
                         {{ if category }}
-                            <div class="mb-3 space-x-3">
+                            <div class="mb-3 gap-3 flex flex-wrap">
+                                {{ partial:components.pill :label="category" color="bluegray" }}
                                 {{ category }}
                                     {{ partial:components.pill }}
                                 {{ /category }}
@@ -26,11 +27,11 @@
                         <a href="{{ url }}">
                             {{ partial:components.heading :label="title" size="h4" color="blue" class="hover:underline" }}
                         </a>
-
+                        
                         {{ if excerpt }}
                             {{ partial:components.lead :label="excerpt" size="base" color="bluegray" class="mt-5" }}
                         {{ /if }}
-
+                        
                         {{ partial:components.arrow_link :link="url" label="Read More" }}
                     </div>
                 </div>

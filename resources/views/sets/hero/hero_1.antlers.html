@@ -3,11 +3,9 @@
         {{ if title }}
             {{ partial:components.heading :label="title" size="h1" color="blue" }}
         {{ /if }}
-
         {{ if description }}
             {{ partial:components.lead :label="description" size="xl" color="bluegray" class="mt-4" }}
         {{ /if }}
-
         {{ if toggle and label }}
             <div class="mt-10">
                 {{ partial:components.button :label="label" size="{button_size}" color="{variant}" }}

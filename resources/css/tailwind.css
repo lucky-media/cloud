@@ -1,27 +1,117 @@
-@import "tailwindcss/base";
+@import "tailwindcss";
+@source "../views";
+@import "./plugins.css";
 
-@import "tailwindcss/components";
+@theme {
+    --font-sans: "Mulish", serif;
 
-@import "tailwindcss/utilities";
+    --text-xs: 0.75rem; /* 12px */
+    --text-xs--line-height: calc(16 / 12);
 
-@layer utilities {
-    .bg-gradient-from-bottom {
-        background: linear-gradient(
-            180deg,
-            rgba(214, 177, 255, 0.5) 0%,
-            rgba(214, 177, 255, 0) 100%
-        );
+    --text-sm: 0.875rem; /* 14px */
+    --text-sm--line-height: calc(18 / 14);
+
+    --text-base: 1rem; /* 16px */
+    --text-base--line-height: calc(20 / 16);
+
+    --text-lg: 1.125rem; /* 18px */
+    --text-lg--line-height: calc(22 / 18);
+
+    --text-xl: 1.25rem; /* 20px */
+    --text-xl--line-height: calc(25 / 20);
+
+    --text-2xl: 1.5rem; /* 24px */
+    --text-2xl--line-height: calc(32 / 24);
+
+    --text-3xl: 1.875rem; /* 30px */
+    --text-3xl--line-height: calc(36 / 30);
+
+    --text-4xl: 2.25rem; /* 36px */
+    --text-4xl--line-height: calc(45 / 36);
+
+    --text-5xl: 2.5rem; /* 40px */
+    --text-5xl--line-height: calc(54 / 40);
+
+    --text-6xl: 3rem; /* 48px */
+    --text-6xl--line-height: calc(60 / 48);
+
+    --color-green-100: #e2efe7;
+    --color-green-200: #d3e7db;
+    --color-green-300: #c4dfcf;
+    --color-green-400: #b6d7c3;
+    --color-green-500: #a7cfb6;
+    --color-green-600: #98c7aa;
+    --color-green-700: #89bf9e;
+    --color-green-800: #7bb792;
+    --color-green-900: #6caf86;
+
+    --color-gray-100: #f9f9f9;
+    --color-gray-200: #efefef;
+    --color-gray-300: #e9e9e9;
+    --color-gray-400: #f6f4f9;
+    --color-gray-500: #71717a;
+    --color-gray-600: #52525b;
+    --color-gray-700: #3f3f46;
+    --color-gray-800: #27272a;
+    --color-gray-900: #18181b;
+
+    --color-bluegray-300: #4b5d68;
+
+    --color-indigo-100: #d3d3dd;
+    --color-indigo-200: #bcbdcb;
+    --color-indigo-300: #a6a7ba;
+    --color-indigo-400: #9091a9;
+    --color-indigo-500: #7a7b98;
+    --color-indigo-600: #646587;
+    --color-indigo-700: #4d4f75;
+    --color-indigo-800: #373964;
+    --color-indigo-900: #212353;
+
+    --color-purple-500: #9058df;
+
+    --color-pink-100: #fde8f5;
+    --color-pink-500: #f063b8;
+
+    --shadow-xs: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    --shadow-3xl: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    --shadow-4xl: 0px 0px 0px 2px #d4d4d8;
+}
+
+@utility container {
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+@layer base {
+
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-gray-200, currentColor);
     }
 
-    .bg-gradient-from-left {
-        background: linear-gradient(
-            270deg,
-            rgba(214, 177, 255, 0.5) -0.22%,
-            rgba(214, 177, 255, 0.15) 100.31%
-        );
+    button:not(:disabled),
+    [role="button"]:not(:disabled) {
+        cursor: pointer;
+    }
+
+    [x-cloak] {
+        display: none !important;
     }
 }
 
-html {
-    height: 100%;
+@layer utilities {
+    .bg-gradient-from-bottom {
+        background: linear-gradient(180deg,
+                rgba(214, 177, 255, 0.5) 0%,
+                rgba(214, 177, 255, 0) 100%);
+    }
+
+    .bg-gradient-from-left {
+        background: linear-gradient(270deg,
+                rgba(214, 177, 255, 0.5) -0.22%,
+                rgba(214, 177, 255, 0.15) 100.31%);
+    }
 }

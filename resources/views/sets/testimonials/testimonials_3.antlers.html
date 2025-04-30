@@ -1,5 +1,5 @@
 <div class="relative py-24 overflow-hidden">
-    <div class="container space-y-10">
+    <div class="container gap-y-10 flex flex-col">
         {{ testimonial }}
             <div class="flex flex-wrap">
                 {{ if image }}
@@ -20,7 +20,7 @@
                             {{ if name }}
                                 {{ partial:components.heading :label="name" size="h5" color="blue" }}
                             {{ /if }}
-
+                            
                             {{ if position }}
                                 {{ partial:components.lead :label="position" size="base" color="bluegray" class="mt-2" }}
                             {{ /if }}
