@@ -7,16 +7,15 @@
             {{ collection from="posts" limit="6" paginate="true" as="posts" }}
                 {{ posts }}
                     <div class="flex flex-col overflow-hidden bg-white shadow-3xl rounded-xl">
-                        <a aria-label="{{ image:alt or title }}"
-                            href="{{ url }}">
+                        <a aria-label="{{ image:alt or title }}" href="{{ url }}">
                             {{ partial:components/picture :image="image" cover="true" class="h-64" sizes="(min-width: 768px) 35vw, 80vw" }}
                         </a>
 
                         <div class="flex flex-col justify-between h-full p-6">
-                            <div class="space-y-5">
-
+                            <div class="gap-y-5">
+                                
                                 {{ if category }}
-                                    <div class="mb-3 space-x-3">
+                                    <div class="mb-3 gap-x-3 flex flex-wrap">
                                         {{ category }}
                                             {{ partial:components.pill }}
                                         {{ /category }}
@@ -26,7 +25,6 @@
                                 <a href="{{ url }}">
                                     {{ partial:components.heading :label="title" size="h4" color="blue" class="hover:underline" }}
                                 </a>
-
                                 {{ if excerpt }}
                                     {{ partial:components.lead :label="excerpt" size="base" color="bluegray" class="mt-5" }}
                                 {{ /if }}

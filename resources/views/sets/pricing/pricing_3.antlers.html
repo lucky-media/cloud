@@ -35,22 +35,20 @@
                         <p class="mb-2 text-4xl font-bold text-gray-900">
                             {{ price }}
                             {{ if duration }}
-                                <span
-                                    class="mt-3 ml-2 text-lg text-gray-500">
+                                <span class="mt-3 ml-2 text-lg text-gray-500">
                                     {{ duration }}
                                 </span>
                             {{ /if }}
                         </p>
-
 
                         {{ if description }}
                             <p class="mb-6 text-gray-500">
                                 {{ description }}
                             </p>
                         {{ /if }}
-
+                        
                         {{ if features }}
-                            <div class="divide-y divide-purple-500 divide-opacity-50">
+                            <div class="divide-y divide-purple-500/50">
                                 {{ features }}
                                     <div class="flex items-center py-4">
                                         {{ svg src="check" class="w-6 h-6 mr-2 text-purple-500 fill-current" }}
@@ -62,7 +60,6 @@
                             </div>
                         {{ /if }}
                     </div>
-
                     {{ if toggle and label }}
                         <div class="px-5 py-8">
                             {{ partial:components.button size="{button_size}" color="{variant}" }}

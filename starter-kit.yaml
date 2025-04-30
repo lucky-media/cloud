@@ -29,8 +29,6 @@ export_paths:
   - public/assets/profile
   - public/assets/logo.svg
   - package.json
-  - tailwind.config.js
   - vite.config.js
-  - postcss.config.js
   - CHANGELOG.md
   - README.md

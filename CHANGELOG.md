@@ -1,6 +1,13 @@
 
 # Changelog
 
+## v3.0 (2025-04-30)
+This release updates to use Tailwind v4 and also updates to some styling breaking changes.
+
+### What's improved
+- Updated to Tailwind v4
+- Updated Dependencies
+
 ## v2.1 2022-01-23
 This release updates the frontend packages and ensures compatibility with the new Statamic Parser.
 

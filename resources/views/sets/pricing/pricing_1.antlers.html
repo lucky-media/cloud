@@ -36,9 +36,9 @@
                             </span>
                         {{ /if }}
                     </p>
-
+                    
                     {{ if features }}
-                        <div class="space-y-6">
+                        <div class="gap-y-6 flex flex-col">
                             {{ features }}
                                 <div class="flex items-center">
                                     {{ svg src="check" class="w-6 h-6 mr-2 text-purple-500 fill-current" }}
@@ -50,7 +50,6 @@
                         </div>
                     {{ /if }}
                 </div>
-
                 {{ if toggle and label }}
                     <div class="px-5 py-8">
                         {{ partial:components.button size="{button_size}" color="{variant}" }}

@@ -1,4 +1,4 @@
-<div class="container py-10 space-y-10">
+<div class="container py-10 gap-y-10 flex flex-col">
     {{ testimonial }}
         <div class="flex flex-wrap items-start">
             <div class="flex items-center md:w-5/12">
@@ -20,7 +20,7 @@
                 {{ if description }}
                     <div class="flex items-start md:max-w-xl">
                         {{ svg src="quote" class="w-6 h-6 text-purple-500 fill-current shrink-0" }}
-
+                        
                         {{ partial:components.lead :label="description" size="xl" color="bluegray" class="ml-6" }}
                     </div>
                 {{ /if }}
